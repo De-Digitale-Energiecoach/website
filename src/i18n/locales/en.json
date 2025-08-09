@@ -1,0 +1,128 @@
+{
+    "common": {
+        "download": "Download",
+        "learnMore": "Learn More",
+        "getStarted": "Get Started",
+        "contact": "Contact",
+        "about": "About"
+    },
+    "hero": {
+        "title": "⚡ PowerWise",
+        "subtitle": "Cut your energy waste. One smart action at a time.",
+        "description": "PowerWise is your AI-powered energy coach that helps you reduce energy bills and lower your CO₂ footprint through easy habits and practical home upgrades.",
+        "downloadAppStore": "Download on App Store",
+        "downloadGooglePlay": "Get it on Google Play",
+        "aiCoach": "AI Coach",
+        "aiCoachMessage": "Turn down your thermostat by 2°F",
+        "thisWeek": "This week",
+        "co2Reduction": "-15% CO₂"
+    },
+    "features": {
+        "title": "Smart Features That Work for You",
+        "aiEnergyCoach": {
+            "title": "AI Energy Coach",
+            "description": "Personalized advice based on your home, usage, and goals"
+        },
+        "ecoActions": {
+            "title": "Eco Actions",
+            "description": "One-time tasks like replacing appliances or sealing cracks"
+        },
+        "sustainableHabits": {
+            "title": "Sustainable Habits",
+            "description": "Daily and weekly routines that lower consumption"
+        },
+        "progressTracking": {
+            "title": "Progress Tracking",
+            "description": "Visual insights into your energy and CO₂ impact"
+        },
+        "streaksMotivation": {
+            "title": "Streaks & Motivation",
+            "description": "Habit streaks, gamification, and encouragement"
+        }
+    },
+    "howItWorks": {
+        "title": "How It Works",
+        "step1": {
+            "title": "Connect Your Home",
+            "description": "Tell us about your home, appliances, and energy goals"
+        },
+        "step2": {
+            "title": "Get AI Recommendations",
+            "description": "Receive personalized advice and action plans"
+        },
+        "step3": {
+            "title": "Track Progress",
+            "description": "Monitor your energy savings and environmental impact"
+        }
+    },
+    "whyItMatters": {
+        "title": "Why It Matters",
+        "description": "Energy waste is more than just a higher bill — it's a climate issue. PowerWise empowers you to make a real difference by taking simple actions that add up over time.",
+        "environmentalImpact": {
+            "title": "Environmental Impact",
+            "description": "Lower your CO₂ footprint and help the planet"
+        },
+        "energySavings": {
+            "title": "Energy Savings",
+            "description": "Reduce your energy bills by 15-40%"
+        },
+        "smartHome": {
+            "title": "Smart Home",
+            "description": "Make your home more efficient and comfortable"
+        },
+        "tracking": {
+            "title": "Track Your Progress",
+            "description": "See the cumulative effect of your efforts"
+        }
+    },
+    "aboutUs": {
+        "title": "About Us",
+        "description": "We're passionate about helping people reduce their energy consumption and environmental impact. PowerWise combines AI technology with practical advice to make energy efficiency accessible to everyone.",
+        "mission": "Our mission is to make energy efficiency simple, engaging, and effective for every household."
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": {
+            "free": {
+                "question": "Is PowerWise free?",
+                "answer": "Yes! You can start using PowerWise for free. We may introduce premium features in the future."
+            },
+            "smartDevices": {
+                "question": "Do I need smart home devices?",
+                "answer": "Not at all. PowerWise works without any connected devices — just your phone and motivation."
+            },
+            "aiPersonalization": {
+                "question": "How does the AI coach personalize the experience?",
+                "answer": "The AI learns from your home details, your goals, and your past activity to recommend the best next steps."
+            },
+            "savings": {
+                "question": "How much can I expect to save on my energy bills?",
+                "answer": "Most users see savings of 15-40% on their energy bills within the first few months, depending on their home and how consistently they follow the recommendations."
+            },
+            "privacy": {
+                "question": "Is my data secure and private?",
+                "answer": "Absolutely. We use industry-standard encryption to protect your data and never sell or share your personal information with third parties."
+            }
+        }
+    },
+    "callToAction": {
+        "title": "Ready to Start Saving?",
+        "description": "Join thousands of users who are already reducing their energy bills and environmental impact with PowerWise.",
+        "downloadNow": "Download Now",
+        "availableOn": "Available on"
+    },
+    "footer": {
+        "copyright": "© 2024 PowerWise. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "contact": "Contact Us"
+    },
+    "navigation": {
+        "home": "Home",
+        "features": "Features",
+        "howItWorks": "How It Works",
+        "whyItMatters": "Why It Matters",
+        "about": "About",
+        "faq": "FAQ"
+    }
+}

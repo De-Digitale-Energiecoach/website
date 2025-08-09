@@ -1,140 +1,91 @@
 # PowerWise Website
 
-A modern React TypeScript website for PowerWise, a smart energy management platform. Built with Vite, Tailwind CSS, and shadcn/ui components.
+A modern, responsive website for PowerWise - an AI-powered energy coaching app that helps users reduce energy bills and lower their CO₂ footprint.
 
-## Features
 
-- 🎨 Modern, responsive design
-- 🌙 Dark mode support
-- ⚡ Fast development with Vite
-- 🎯 TypeScript for type safety
-- 🎨 Tailwind CSS for styling
-- 🧩 shadcn/ui components
-- 📱 Mobile-first design
-
-## Tech Stack
-
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **UI Components**: shadcn/ui (Radix UI primitives)
-- **Icons**: Lucide React
-- **Development**: ESLint, TypeScript
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js 18+ 
-- npm, yarn, or pnpm
+- npm or yarn
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd website
-```
-
+1. Clone the repository
 2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
+   ```bash
+   npm install
+   ```
 
 3. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   ```bash
+   npm run dev
+   ```
 
 4. Open your browser and navigate to `http://localhost:3000`
 
-## Available Scripts
+### Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```
-website/
-├── public/                   # Static files (favicon, robots.txt, images, etc.)
-│   ├── favicon.ico
-│   ├── logo.png
-│   └── og-image.png
-│
-├── src/                      # Source code
-│   ├── assets/               # Custom images, fonts, icons
-│   ├── components/           # Reusable UI components
-│   │   ├── ui/              # shadcn/ui components
-│   │   ├── figma/           # Figma-specific components
-│   │   ├── Header.tsx       # Navigation header
-│   │   ├── Footer.tsx       # Footer component
-│   │   ├── BackToTop.tsx    # Back to top button
-│   │   └── AnimatedSection.tsx # Animation wrapper
-│   ├── layouts/              # Page layout wrappers
-│   │   └── MainLayout.tsx   # Main application layout
-│   ├── pages/                # Page components
-│   │   ├── Home.tsx         # Home page (contains all sections)
-│   │   ├── Hero.tsx         # Hero section
-│   │   ├── Features.tsx     # Features section
-│   │   ├── HowItWorks.tsx   # How it works section
-│   │   ├── WhyItMatters.tsx # Why it matters section
-│   │   ├── AboutUs.tsx      # About us section
-│   │   ├── FAQ.tsx          # FAQ section
-│   │   └── CallToAction.tsx # Call to action section
-│   ├── styles/               # Global styles
-│   │   └── globals.css      # Tailwind + custom CSS
-│   ├── App.tsx               # Main React app
-│   └── main.tsx              # Entry point for Vite
-│
-├── tailwind.config.js        # Tailwind config
-├── postcss.config.js         # PostCSS config
-├── tsconfig.json             # TypeScript config
-├── index.html                # Root HTML file (used by Vite)
-├── package.json              # NPM dependencies and scripts
-└── vite.config.ts            # Vite config
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (buttons, cards, etc.)
+│   ├── Header.tsx      # Navigation header with language switcher
+│   ├── Footer.tsx      # Site footer
+│   └── LanguageSwitcher.tsx  # Language toggle component
+├── sections/           # Page sections
+│   ├── Hero.tsx        # Hero section
+│   ├── Features.tsx    # Features showcase
+│   ├── HowItWorks.tsx  # How it works section
+│   ├── WhyItMatters.tsx # Why it matters section
+│   ├── AboutUs.tsx     # About us section
+│   ├── FAQ.tsx         # FAQ section
+│   └── CallToAction.tsx # Call to action section
+├── i18n/               # Internationalization
+│   ├── index.ts        # i18n configuration
+│   └── locales/        # Translation files
+│       ├── en.json     # English translations
+│       └── nl.json     # Dutch translations
+├── layouts/            # Layout components
+├── pages/              # Page components
+└── styles/             # Global styles
 ```
 
-## Customization
+## 🎨 Design System
 
-### Colors and Theme
+The website uses a modern design system built with:
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible UI primitives
+- **Framer Motion** - Animation library
+- **Lucide React** - Icon library
 
-The project uses CSS custom properties for theming. You can modify the colors in `src/styles/globals.css`:
+## 📱 Responsive Design
 
-- Primary colors: Green theme (`#025134`)
-- Dark mode: Automatic with `dark` class
-- Custom properties: Defined in `:root` and `.dark` selectors
+The website is fully responsive and optimized for:
+- Desktop (1024px+)
+- Tablet (768px - 1023px)
+- Mobile (320px - 767px)
 
-### Adding New Components
+## 🔧 Customization
 
-1. Create your component in the `src/components/` directory
-2. Import and use shadcn/ui components from `src/components/ui/`
-3. Use Tailwind CSS classes for styling
+### Styling
+- Global styles are in `src/styles/globals.css`
+- Component-specific styles use Tailwind CSS classes
+- Theme colors and design tokens are defined in `tailwind.config.js`
 
-### Adding New Pages
+### Content
+- All text content is managed through the i18n system
+- Images and assets are in `src/assets/`
+- Static content can be updated in the translation files
 
-1. Create your page component in the `src/pages/` directory
-2. Import and use the `MainLayout` from `src/layouts/`
-3. Add the page to your routing logic
+## 📄 License
 
-## Building for Production
-
-```bash
-npm run build
-```
-
-The built files will be in the `dist/` directory.
-
-## License
-
-This project is part of the PowerWise platform. 
+This project is licensed under the MIT License. 

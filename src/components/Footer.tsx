@@ -1,7 +1,10 @@
 import { Separator } from "./ui/separator";
 import { Zap, Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
+
   const handleNavClick = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -40,25 +43,25 @@ export function Footer() {
                 onClick={() => handleNavClick('how-it-works')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                How It Works
+                {t('navigation.howItWorks')}
               </button>
               <button
                 onClick={() => handleNavClick('features')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                Features
+                {t('navigation.features')}
               </button>
               <button
                 onClick={() => handleNavClick('why-it-matters')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                Why It Matters
+                {t('navigation.whyItMatters')}
               </button>
               <button
                 onClick={() => handleNavClick('download')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                Download App
+                {t('common.download')}
               </button>
             </div>
           </div>
@@ -71,16 +74,16 @@ export function Footer() {
                 onClick={() => handleNavClick('about')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                About Us
+                {t('navigation.about')}
               </button>
               <button
                 onClick={() => handleNavClick('faq')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                FAQ
+                {t('navigation.faq')}
               </button>
-              <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>
-              <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">Terms of Service</a>
+              <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">{t('footer.privacy')}</a>
+              <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">{t('footer.terms')}</a>
             </div>
           </div>
 
@@ -108,17 +111,17 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 PowerWise. All rights reserved.
+            {t('footer.copyright')}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Privacy
+              {t('footer.privacy')}
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Terms
+              {t('footer.terms')}
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Cookies
+              {t('footer.contact')}
             </a>
           </div>
         </div>

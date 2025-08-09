@@ -2,47 +2,50 @@ import { Card, CardContent } from "../components/ui/card";
 import { Brain, Lightbulb, Repeat, BarChart3, Trophy } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
-
-const features = [
-  {
-    icon: Brain,
-    title: "AI Energy Coach",
-    description: "Personalized advice based on your home, usage, and goals"
-  },
-  {
-    icon: Lightbulb,
-    title: "Eco Actions",
-    description: "One-time tasks like replacing appliances or sealing cracks"
-  },
-  {
-    icon: Repeat,
-    title: "Sustainable Habits",
-    description: "Daily and weekly routines that lower consumption"
-  },
-  {
-    icon: BarChart3,
-    title: "Progress Tracking",
-    description: "Visual insights into your energy and CO₂ impact"
-  },
-  {
-    icon: Trophy,
-    title: "Streaks & Motivation",
-    description: "Habit streaks, gamification, and encouragement"
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export function Features() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      icon: Brain,
+      title: t('features.aiEnergyCoach.title'),
+      description: t('features.aiEnergyCoach.description')
+    },
+    {
+      icon: Lightbulb,
+      title: t('features.ecoActions.title'),
+      description: t('features.ecoActions.description')
+    },
+    {
+      icon: Repeat,
+      title: t('features.sustainableHabits.title'),
+      description: t('features.sustainableHabits.description')
+    },
+    {
+      icon: BarChart3,
+      title: t('features.progressTracking.title'),
+      description: t('features.progressTracking.description')
+    },
+    {
+      icon: Trophy,
+      title: t('features.streaksMotivation.title'),
+      description: t('features.streaksMotivation.description')
+    }
+  ];
+
   return (
     <section id="features" className="py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-medium text-foreground mb-4">
-              Smart Features That Work for You
+              {t('features.title')}
             </h2>
           </div>
         </AnimatedSection>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => {
             const IconComponent = feature.icon;

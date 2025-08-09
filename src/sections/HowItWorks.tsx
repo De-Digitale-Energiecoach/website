@@ -2,33 +2,36 @@ import { Card, CardContent } from "../components/ui/card";
 import { CheckSquare, Target, Brain } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
-
-const steps = [
-  {
-    icon: CheckSquare,
-    title: "Pick Habits or Actions",
-    description: "Choose from personalized energy-saving tasks that fit your home."
-  },
-  {
-    icon: Target,
-    title: "Track & Stay Consistent",
-    description: "Use reminders and weekly check-ins to stay on track."
-  },
-  {
-    icon: Brain,
-    title: "AI-Powered Coaching",
-    description: "Your coach adapts suggestions as you make progress."
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export function HowItWorks() {
+  const { t } = useTranslation();
+
+  const steps = [
+    {
+      icon: CheckSquare,
+      title: t('howItWorks.step1.title'),
+      description: t('howItWorks.step1.description')
+    },
+    {
+      icon: Target,
+      title: t('howItWorks.step2.title'),
+      description: t('howItWorks.step2.description')
+    },
+    {
+      icon: Brain,
+      title: t('howItWorks.step3.title'),
+      description: t('howItWorks.step3.description')
+    }
+  ];
+
   return (
     <section id="how-it-works" className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-medium text-foreground mb-4">
-              How PowerWise Helps You Save
+              {t('howItWorks.title')}
             </h2>
           </div>
         </AnimatedSection>

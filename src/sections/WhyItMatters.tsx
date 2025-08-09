@@ -2,41 +2,44 @@ import { Card, CardContent } from "../components/ui/card";
 import { Globe, DollarSign, Home, TrendingDown } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
-
-const impacts = [
-  {
-    icon: Globe,
-    title: "Lower your carbon footprint",
-    description: "Every action you take reduces CO₂ emissions"
-  },
-  {
-    icon: DollarSign,
-    title: "Cut energy costs",
-    description: "Save money on monthly electricity bills"
-  },
-  {
-    icon: Home,
-    title: "Make your home more efficient",
-    description: "Improve comfort while using less energy"
-  },
-  {
-    icon: TrendingDown,
-    title: "Track your long-term eco impact",
-    description: "See the cumulative effect of your efforts"
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export function WhyItMatters() {
+  const { t } = useTranslation();
+
+  const impacts = [
+    {
+      icon: Globe,
+      title: t('whyItMatters.environmentalImpact.title'),
+      description: t('whyItMatters.environmentalImpact.description')
+    },
+    {
+      icon: DollarSign,
+      title: t('whyItMatters.energySavings.title'),
+      description: t('whyItMatters.energySavings.description')
+    },
+    {
+      icon: Home,
+      title: t('whyItMatters.smartHome.title'),
+      description: t('whyItMatters.smartHome.description')
+    },
+    {
+      icon: TrendingDown,
+      title: t('whyItMatters.tracking.title'),
+      description: t('whyItMatters.tracking.description')
+    }
+  ];
+
   return (
     <section className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-medium text-foreground mb-6">
-              Why PowerWise?
+              {t('whyItMatters.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Energy waste is more than just a higher bill — it's a climate issue. PowerWise empowers you to make a real difference by taking simple actions that add up over time.
+              {t('whyItMatters.description')}
             </p>
           </div>
         </AnimatedSection>

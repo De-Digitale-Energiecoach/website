@@ -1,8 +1,11 @@
 import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export function AboutUs() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,19 +13,19 @@ export function AboutUs() {
           <AnimatedSection>
             <div>
               <h2 className="text-3xl lg:text-4xl font-medium text-foreground mb-6">
-                About PowerWise
+                {t('aboutUs.title')}
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  PowerWise is a company dedicated to helping the environment by making energy-saving easy, accessible, and impactful for everyone.
+                  {t('aboutUs.description')}
                 </p>
                 <p>
-                  We believe that small changes at home can lead to massive global impact — and our app is built to guide you every step of the way.
+                  {t('aboutUs.mission')}
                 </p>
               </div>
             </div>
           </AnimatedSection>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -1,38 +1,41 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
-
-const faqs = [
-  {
-    question: "Is PowerWise free?",
-    answer: "Yes! You can start using PowerWise for free. We may introduce premium features in the future."
-  },
-  {
-    question: "Do I need smart home devices?",
-    answer: "Not at all. PowerWise works without any connected devices — just your phone and motivation."
-  },
-  {
-    question: "How does the AI coach personalize the experience?",
-    answer: "The AI learns from your home details, your goals, and your past activity to recommend the best next steps."
-  },
-  {
-    question: "How much can I expect to save on my energy bills?",
-    answer: "Most users see savings of 15-40% on their energy bills within the first few months, depending on their home and how consistently they follow the recommendations."
-  },
-  {
-    question: "Is my data secure and private?",
-    answer: "Absolutely. We use industry-standard encryption to protect your data and never sell or share your personal information with third parties."
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export function FAQ() {
+  const { t } = useTranslation();
+
+  const faqs = [
+    {
+      question: t('faq.questions.free.question'),
+      answer: t('faq.questions.free.answer')
+    },
+    {
+      question: t('faq.questions.smartDevices.question'),
+      answer: t('faq.questions.smartDevices.answer')
+    },
+    {
+      question: t('faq.questions.aiPersonalization.question'),
+      answer: t('faq.questions.aiPersonalization.answer')
+    },
+    {
+      question: t('faq.questions.savings.question'),
+      answer: t('faq.questions.savings.answer')
+    },
+    {
+      question: t('faq.questions.privacy.question'),
+      answer: t('faq.questions.privacy.answer')
+    }
+  ];
+
   return (
     <section className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-medium text-foreground mb-4">
-              Frequently Asked Questions
+              {t('faq.title')}
             </h2>
           </div>
         </AnimatedSection>

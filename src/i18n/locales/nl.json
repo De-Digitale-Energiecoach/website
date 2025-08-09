@@ -1,0 +1,128 @@
+{
+    "common": {
+        "download": "Downloaden",
+        "learnMore": "Meer informatie",
+        "getStarted": "Aan de slag",
+        "contact": "Contact",
+        "about": "Over ons"
+    },
+    "hero": {
+        "title": "⚡ PowerWise",
+        "subtitle": "Verminder je energieverspilling. Eén slimme actie tegelijk.",
+        "description": "PowerWise is je AI-aangedreven energiecoach die je helpt je energierekening te verlagen en je CO₂-voetafdruk te verminderen door middel van eenvoudige gewoonten en praktische huisverbeteringen.",
+        "downloadAppStore": "Downloaden in App Store",
+        "downloadGooglePlay": "Downloaden in Google Play",
+        "aiCoach": "AI Coach",
+        "aiCoachMessage": "Zet je thermostaat 2°F lager",
+        "thisWeek": "Deze week",
+        "co2Reduction": "-15% CO₂"
+    },
+    "features": {
+        "title": "Slimme functies die voor jou werken",
+        "aiEnergyCoach": {
+            "title": "AI Energie Coach",
+            "description": "Gepersonaliseerd advies gebaseerd op je huis, gebruik en doelen"
+        },
+        "ecoActions": {
+            "title": "Eco Acties",
+            "description": "Eenmalige taken zoals het vervangen van apparaten of het afdichten van kieren"
+        },
+        "sustainableHabits": {
+            "title": "Duurzame Gewoonten",
+            "description": "Dagelijkse en wekelijkse routines die het verbruik verlagen"
+        },
+        "progressTracking": {
+            "title": "Voortgang Volgen",
+            "description": "Visuele inzichten in je energie- en CO₂-impact"
+        },
+        "streaksMotivation": {
+            "title": "Reeksen & Motivatie",
+            "description": "Gewoonte-reeksen, gamification en aanmoediging"
+        }
+    },
+    "howItWorks": {
+        "title": "Hoe het werkt",
+        "step1": {
+            "title": "Verbind je huis",
+            "description": "Vertel ons over je huis, apparaten en energiedoelen"
+        },
+        "step2": {
+            "title": "Krijg AI-aanbevelingen",
+            "description": "Ontvang gepersonaliseerd advies en actieplannen"
+        },
+        "step3": {
+            "title": "Volg je voortgang",
+            "description": "Monitor je energiebesparingen en milieueffect"
+        }
+    },
+    "whyItMatters": {
+        "title": "Waarom het belangrijk is",
+        "description": "Energieverspilling is meer dan alleen een hogere rekening — het is een klimaatprobleem. PowerWise geeft je de kracht om een echt verschil te maken door eenvoudige acties te ondernemen die zich opstapelen in de loop van de tijd.",
+        "environmentalImpact": {
+            "title": "Milieu-impact",
+            "description": "Verlaag je CO₂-voetafdruk en help de planeet"
+        },
+        "energySavings": {
+            "title": "Energiebesparingen",
+            "description": "Verlaag je energierekening met 15-40%"
+        },
+        "smartHome": {
+            "title": "Slim huis",
+            "description": "Maak je huis efficiënter en comfortabeler"
+        },
+        "tracking": {
+            "title": "Volg je voortgang",
+            "description": "Zie het cumulatieve effect van je inspanningen"
+        }
+    },
+    "aboutUs": {
+        "title": "Over ons",
+        "description": "We zijn gepassioneerd over het helpen van mensen om hun energieverbruik en milieueffect te verminderen. PowerWise combineert AI-technologie met praktisch advies om energie-efficiëntie toegankelijk te maken voor iedereen.",
+        "mission": "Onze missie is om energie-efficiëntie eenvoudig, boeiend en effectief te maken voor elk huishouden."
+    },
+    "faq": {
+        "title": "Veelgestelde vragen",
+        "questions": {
+            "free": {
+                "question": "Is PowerWise gratis?",
+                "answer": "Ja! Je kunt PowerWise gratis beginnen te gebruiken. We kunnen in de toekomst premium functies introduceren."
+            },
+            "smartDevices": {
+                "question": "Heb ik slimme huisapparaten nodig?",
+                "answer": "Helemaal niet. PowerWise werkt zonder aangesloten apparaten — alleen je telefoon en motivatie."
+            },
+            "aiPersonalization": {
+                "question": "Hoe personaliseert de AI-coach de ervaring?",
+                "answer": "De AI leert van je huisdetails, je doelen en je eerdere activiteit om de beste volgende stappen aan te bevelen."
+            },
+            "savings": {
+                "question": "Hoeveel kan ik verwachten te besparen op mijn energierekening?",
+                "answer": "De meeste gebruikers zien besparingen van 15-40% op hun energierekening binnen de eerste paar maanden, afhankelijk van hun huis en hoe consistent ze de aanbevelingen volgen."
+            },
+            "privacy": {
+                "question": "Zijn mijn gegevens veilig en privé?",
+                "answer": "Absoluut. We gebruiken industrie-standaard encryptie om je gegevens te beschermen en verkopen of delen nooit je persoonlijke informatie met derden."
+            }
+        }
+    },
+    "callToAction": {
+        "title": "Klaar om te beginnen met besparen?",
+        "description": "Doe mee met duizenden gebruikers die al hun energierekening en milieueffect verminderen met PowerWise.",
+        "downloadNow": "Nu downloaden",
+        "availableOn": "Beschikbaar op"
+    },
+    "footer": {
+        "copyright": "© 2024 PowerWise. Alle rechten voorbehouden.",
+        "privacy": "Privacybeleid",
+        "terms": "Gebruiksvoorwaarden",
+        "contact": "Contact"
+    },
+    "navigation": {
+        "home": "Home",
+        "features": "Functies",
+        "howItWorks": "Hoe het werkt",
+        "whyItMatters": "Waarom het belangrijk is",
+        "about": "Over ons",
+        "faq": "FAQ"
+    }
+}

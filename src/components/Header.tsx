@@ -1,10 +1,13 @@
 import { Button } from "./ui/button";
 import { Menu, X, Zap } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -40,11 +43,10 @@ export function Header() {
   };
 
   const getNavItemClasses = (sectionId: string) => {
-    return `transition-colors ${
-      activeSection === sectionId
-        ? 'text-primary font-medium'
-        : 'text-foreground hover:text-primary'
-    }`;
+    return `transition-colors ${activeSection === sectionId
+      ? 'text-primary font-medium'
+      : 'text-foreground hover:text-primary'
+      }`;
   };
 
   return (
@@ -53,7 +55,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <button 
+              <button
                 onClick={() => handleNavClick('home')}
                 className="flex items-center gap-2 hover:opacity-80 transition-opacity"
               >
@@ -64,46 +66,47 @@ export function Header() {
               </button>
             </div>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <button 
+              <button
                 onClick={() => handleNavClick('how-it-works')}
                 className={getNavItemClasses('how-it-works')}
               >
-                How It Works
+                {t('navigation.howItWorks')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('features')}
                 className={getNavItemClasses('features')}
               >
-                Features
+                {t('navigation.features')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('why-it-matters')}
                 className={getNavItemClasses('why-it-matters')}
               >
-                Why It Matters
+                {t('navigation.whyItMatters')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('about')}
                 className={getNavItemClasses('about')}
               >
-                About
+                {t('navigation.about')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('faq')}
                 className={getNavItemClasses('faq')}
               >
-                FAQ
+                {t('navigation.faq')}
               </button>
             </div>
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <Button onClick={() => handleNavClick('download')}>
-              Download App
+              {t('common.download')}
             </Button>
           </div>
 
@@ -123,42 +126,43 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
-              <button 
+              <button
                 onClick={() => handleNavClick('how-it-works')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('how-it-works')}`}
               >
-                How It Works
+                {t('navigation.howItWorks')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('features')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('features')}`}
               >
-                Features
+                {t('navigation.features')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('why-it-matters')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('why-it-matters')}`}
               >
-                Why It Matters
+                {t('navigation.whyItMatters')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('about')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('about')}`}
               >
-                About
+                {t('navigation.about')}
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('faq')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('faq')}`}
               >
-                FAQ
+                {t('navigation.faq')}
               </button>
-              <div className="px-3 py-2">
-                <Button 
-                  className="w-full" 
+              <div className="px-3 py-2 flex gap-2">
+                <LanguageSwitcher />
+                <Button
+                  className="flex-1"
                   onClick={() => handleNavClick('download')}
                 >
-                  Download App
+                  {t('common.download')}
                 </Button>
               </div>
             </div>

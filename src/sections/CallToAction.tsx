@@ -3,8 +3,11 @@ import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 import { Smartphone, ArrowRight } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export function CallToAction() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 lg:py-32 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,20 +15,20 @@ export function CallToAction() {
           <AnimatedSection>
             <div className="text-center lg:text-left">
               <h2 className="text-3xl lg:text-4xl font-medium mb-4">
-                Ready to Save Energy and Reduce Your CO₂ Footprint?
+                {t('callToAction.title')}
               </h2>
               <p className="text-xl text-primary-foreground/80 mb-8">
-                Join thousands of users building a smarter, greener lifestyle with PowerWise.
+                {t('callToAction.description')}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="secondary" size="lg" className="h-14 px-8">
                   <Smartphone className="mr-2 h-5 w-5" />
-                  Download the App
+                  {t('callToAction.downloadNow')}
                 </Button>
                 <Button variant="outline" size="lg" className="h-14 px-8 border-primary-foreground/20 hover:bg-primary-foreground/10">
                   <ArrowRight className="mr-2 h-5 w-5" />
-                  Learn More
+                  {t('common.learnMore')}
                 </Button>
               </div>
             </div>

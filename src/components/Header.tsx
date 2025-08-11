@@ -1,8 +1,9 @@
 import { Button } from "./ui/button";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import iconImage from "../assets/icon.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export function Header() {
     );
 
     // Observe all sections
-    const sections = ['home', 'how-it-works', 'features', 'why-it-matters', 'about', 'faq', 'download'];
+    const sections = ['home', 'how-it-works', 'features', 'municipalities', 'about', 'download'];
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -59,10 +60,10 @@ export function Header() {
                 onClick={() => handleNavClick('home')}
                 className="flex items-center gap-2 hover:opacity-80 transition-opacity"
               >
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <Zap className="h-5 w-5 text-primary-foreground" />
+                <div className="w-12 h-16 rounded-lg flex items-center justify-center">
+                  <img src={iconImage} alt="Powerwise Icon" className="text-primary-foreground" />
                 </div>
-                <h1 className="text-2xl font-medium text-foreground">PowerWise</h1>
+                <h1 className="text-2xl font-medium text-foreground">Powerwise</h1>
               </button>
             </div>
           </div>
@@ -83,22 +84,16 @@ export function Header() {
                 {t('navigation.features')}
               </button>
               <button
-                onClick={() => handleNavClick('why-it-matters')}
-                className={getNavItemClasses('why-it-matters')}
+                onClick={() => handleNavClick('municipalities')}
+                className={getNavItemClasses('municipalities')}
               >
-                {t('navigation.whyItMatters')}
+                {t('navigation.municipalities')}
               </button>
               <button
                 onClick={() => handleNavClick('about')}
                 className={getNavItemClasses('about')}
               >
                 {t('navigation.about')}
-              </button>
-              <button
-                onClick={() => handleNavClick('faq')}
-                className={getNavItemClasses('faq')}
-              >
-                {t('navigation.faq')}
               </button>
             </div>
           </nav>
@@ -139,22 +134,16 @@ export function Header() {
                 {t('navigation.features')}
               </button>
               <button
-                onClick={() => handleNavClick('why-it-matters')}
-                className={`block w-full text-left px-3 py-2 ${getNavItemClasses('why-it-matters')}`}
+                onClick={() => handleNavClick('municipalities')}
+                className={`block w-full text-left px-3 py-2 ${getNavItemClasses('municipalities')}`}
               >
-                {t('navigation.whyItMatters')}
+                {t('navigation.Municipalities')}
               </button>
               <button
                 onClick={() => handleNavClick('about')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('about')}`}
               >
                 {t('navigation.about')}
-              </button>
-              <button
-                onClick={() => handleNavClick('faq')}
-                className={`block w-full text-left px-3 py-2 ${getNavItemClasses('faq')}`}
-              >
-                {t('navigation.faq')}
               </button>
               <div className="px-3 py-2 flex gap-2">
                 <LanguageSwitcher />

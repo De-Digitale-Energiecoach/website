@@ -38,7 +38,7 @@ export function AboutUs() {
             className="relative"
           >
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop&crop=center"
+              src="https://images.unsplash.com/photo-1681949287382-052ea3954a51?w=900&auto=format&fit=crop"
               alt="Team working on sustainable energy solutions"
               className="w-full h-96 object-cover rounded-2xl shadow-xl"
             />

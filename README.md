@@ -1,6 +1,6 @@
-# PowerWise Website
+# Powerwise Website
 
-A modern, responsive website for PowerWise - an AI-powered energy coaching app that helps users reduce energy bills and lower their CO₂ footprint.
+A modern, responsive website for Powerwise - an AI-powered energy coaching app that helps users reduce energy bills and lower their CO₂ footprint.
 
 
 ## 🚀 Getting Started
@@ -47,7 +47,6 @@ src/
 │   ├── HowItWorks.tsx  # How it works section
 │   ├── WhyItMatters.tsx # Why it matters section
 │   ├── AboutUs.tsx     # About us section
-│   ├── FAQ.tsx         # FAQ section
 │   └── CallToAction.tsx # Call to action section
 ├── i18n/               # Internationalization
 │   ├── index.ts        # i18n configuration

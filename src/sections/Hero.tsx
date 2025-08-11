@@ -1,7 +1,7 @@
 import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 import { Apple, Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
-import ecoHouseImage from "../assets/eco-house.png";
+import ecoHouseImage from "../assets/hero.png";
 import { Button } from "../components/ui/button";
 import { useTranslation } from "react-i18next";
 
@@ -18,11 +18,19 @@ export function Hero() {
             transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="text-center lg:text-left"
           >
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="text-lg text-muted-foreground mb-4"
+            >
+              {t('hero.intro')}
+            </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-medium text-foreground mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-medium text-primary mb-6"
             >
               {t('hero.title')}
             </motion.h1>
@@ -30,7 +38,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-muted-foreground mb-6"
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-foreground mb-6"
             >
               {t('hero.subtitle')}
             </motion.h2>
@@ -38,9 +46,17 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl text-muted-foreground mb-8 max-w-2xl text-center lg:text-center mx-auto"
+              className="text-xl text-foreground mb-8 max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
             >
-              {t('hero.description')}
+              {t('hero.description1')}
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="text-xl text-foreground mb-8 max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
+            >
+              {t('hero.description2')}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -68,7 +84,7 @@ export function Hero() {
             <div className="relative mx-auto w-80 h-96 lg:w-96 lg:h-[500px]">
               <ImageWithFallback
                 src={ecoHouseImage}
-                alt="PowerWise eco house illustration"
+                alt="Powerwise eco house illustration"
                 className="w-full h-full object-cover rounded-3xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl"></div>

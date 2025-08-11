@@ -1,6 +1,7 @@
 import { Separator } from "./ui/separator";
-import { Zap, Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Linkedin, Mail, MapPin, Shield } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import iconImage from "../assets/icon.png";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -15,22 +16,46 @@ export function Footer() {
   return (
     <footer className="bg-background border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Privacy Section */}
+        <div className="mb-12 pb-8 border-b">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Shield className="h-6 w-6 text-primary" />
+                <h3 className="text-xl font-medium text-foreground">{t('privacy.title')}</h3>
+              </div>
+              <div className="space-y-3 text-muted-foreground">
+                <p>{t('privacy.description')}</p>
+                <p>
+                  {t('privacy.fullVersionBefore')}
+                  <a href="#" className="text-primary hover:underline">
+                    {t('privacy.fullVersionLink')}
+                  </a>
+                  {t('privacy.fullVersionAfter')}
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-48 h-32 bg-muted/50 rounded-lg flex items-center justify-center">
+                <Shield className="h-16 w-16 text-muted-foreground/30" />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Zap className="h-5 w-5 text-primary-foreground" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src={iconImage} alt="Powerwise" className="text-primary-foreground" />
               </div>
-              <span className="text-xl font-medium">PowerWise</span>
+              <span className="text-xl font-medium">Powerwise</span>
             </div>
             <p className="text-muted-foreground">
-              Empowering smart energy decisions for a sustainable future. Save money while saving the planet.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
-              <Instagram className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
               <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
             </div>
           </div>
@@ -49,13 +74,13 @@ export function Footer() {
                 onClick={() => handleNavClick('features')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                {t('navigation.features')}
+                {t('footer.features')}
               </button>
               <button
-                onClick={() => handleNavClick('why-it-matters')}
+                onClick={() => handleNavClick('municipalities')}
                 className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
               >
-                {t('navigation.whyItMatters')}
+                {t('navigation.municipalities')}
               </button>
               <button
                 onClick={() => handleNavClick('download')}
@@ -76,14 +101,8 @@ export function Footer() {
               >
                 {t('navigation.about')}
               </button>
-              <button
-                onClick={() => handleNavClick('faq')}
-                className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t('navigation.faq')}
-              </button>
-              <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">{t('footer.privacy')}</a>
-              <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">{t('footer.terms')}</a>
+              <a href="#" className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors">{t('footer.privacy')}</a>
+              <a href="#" className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors">{t('footer.terms')}</a>
             </div>
           </div>
 
@@ -93,15 +112,11 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>support@powerwise.com</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                <span>+1 (123) 456-7890</span>
+                <span>info@dedigitaleenergiecoach.nl</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>Amsterdam, Netherlands</span>
+                <span>Dream Street 12, 2133LK Hoofddorp</span>
               </div>
             </div>
           </div>

@@ -7,9 +7,11 @@
         "about": "About"
     },
     "hero": {
-        "title": "⚡ PowerWise",
-        "subtitle": "Cut your energy waste. One smart action at a time.",
-        "description": "PowerWise is your AI-powered energy coach that helps you reduce energy bills and lower your CO₂ footprint through easy habits and practical home upgrades.",
+        "intro": "The Digital Energy Coach presents",
+        "title": "Powerwise",
+        "subtitle": "More comfort. Less consumption.",
+        "description1": "Powerwise is developed by a father–son team with a passion for technology and a sustainable future. Powerwise — our smart, AI-powered energy coach — helps you to lower your energy bills and to reduce your CO₂ footprint.",
+        "description2": "Get practical tips and personal insights that make an immediate impact. Join us and start saving today.",
         "downloadAppStore": "Download on App Store",
         "downloadGooglePlay": "Get it on Google Play",
         "aiCoach": "AI Coach",
@@ -18,111 +20,97 @@
         "co2Reduction": "-15% CO₂"
     },
     "features": {
-        "title": "Smart Features That Work for You",
-        "aiEnergyCoach": {
-            "title": "AI Energy Coach",
-            "description": "Personalized advice based on your home, usage, and goals"
+        "title": "Features that make saving easy",
+        "digitalEnergyCoach": {
+            "title": "Your digital energy coach",
+            "description": "Tailored to your home and habits."
         },
-        "ecoActions": {
-            "title": "Eco Actions",
-            "description": "One-time tasks like replacing appliances or sealing cracks"
+        "actions": {
+            "title": "Actions",
+            "description": "From one-off tasks to smart investments that deliver lasting savings."
         },
         "sustainableHabits": {
             "title": "Sustainable Habits",
-            "description": "Daily and weekly routines that lower consumption"
+            "description": "Daily and weekly routines that permanently reduce your energy use."
         },
-        "progressTracking": {
-            "title": "Progress Tracking",
-            "description": "Visual insights into your energy and CO₂ impact"
+        "progressMotivation": {
+            "title": "Progress & Motivation",
+            "description": "Earn energy-saving points, track streaks, and stay engaged."
         },
-        "streaksMotivation": {
-            "title": "Streaks & Motivation",
-            "description": "Habit streaks, gamification, and encouragement"
+        "localExpertise": {
+            "title": "Local Expertise",
+            "description": "Built for the Dutch market — with knowledge of subsidies and best practices for Dutch households."
         }
     },
     "howItWorks": {
         "title": "How It Works",
         "step1": {
             "title": "Connect Your Home",
-            "description": "Tell us about your home, appliances, and energy goals"
+            "description": "Tell us about your home and your motivation. Within minutes, you’re ready to start saving energy and money."
         },
         "step2": {
-            "title": "Get AI Recommendations",
-            "description": "Receive personalized advice and action plans"
+            "title": "Start saving",
+            "description": "Receive personalised actions and tips you can apply right away — from small daily habits to smart home investments."
         },
         "step3": {
-            "title": "Track Progress",
-            "description": "Monitor your energy savings and environmental impact"
+            "title": "Score & improve",
+            "description": "Earn energy-saving points for every action, keep track of your streaks, and see how your choices add up to make a big impact."
         }
     },
-    "whyItMatters": {
-        "title": "Why It Matters",
-        "description": "Energy waste is more than just a higher bill — it's a climate issue. PowerWise empowers you to make a real difference by taking simple actions that add up over time.",
+    "municipalities": {
+        "title": "Working together for a more sustainable municipality",
+        "description1": "Research by TNO shows that energy coaches help residents make proven savings on their energy bills. Utrecht University found that gamification motivates people to maintain sustainable behaviours over time.",
+        "description2": "With Powerwise, we bring these two worlds together in one easy-to-use app that both guides and motivates residents to save energy.",
         "environmentalImpact": {
-            "title": "Environmental Impact",
-            "description": "Lower your CO₂ footprint and help the planet"
+            "title": "Reach more residents",
+            "description": "With Powerwise, we reach and motivate more households than traditional energy campaigns."
         },
         "energySavings": {
-            "title": "Energy Savings",
-            "description": "Reduce your energy bills by 15-40%"
+            "title": "Measurable impact",
+            "description": "See exactly which actions and habits are being adopted by your residents."
         },
         "smartHome": {
-            "title": "Smart Home",
-            "description": "Make your home more efficient and comfortable"
+            "title": "Insights that strengthen policy",
+            "description": "Receive valuable, anonymised data on citizens' behaviour and motivation to make your policies even more effective."
         },
         "tracking": {
-            "title": "Track Your Progress",
-            "description": "See the cumulative effect of your efforts"
+            "title": "Research-based",
+            "description": "Built on proven methods from research and practice, designed specifically for the Dutch market."
         }
     },
     "aboutUs": {
-        "title": "About Us",
-        "description": "We're passionate about helping people reduce their energy consumption and environmental impact. PowerWise combines AI technology with practical advice to make energy efficiency accessible to everyone.",
-        "mission": "Our mission is to make energy efficiency simple, engaging, and effective for every household."
+        "title": "Who we are",
+        "description": "We are a father-and-son team with a shared passion for smart technology and a vision for a sustainable future. Driven by this mission, we develop solutions that directly contribute to lower energy costs and reduced CO₂ emissions.",
+        "mission": "With Powerwise, we support households and municipalities in accelerating the energy transition step by step. In addition, we provide municipalities with valuable insights into the behaviour and motivation of their residents, enabling more effective policies and actions."
     },
-    "faq": {
-        "title": "Frequently Asked Questions",
-        "questions": {
-            "free": {
-                "question": "Is PowerWise free?",
-                "answer": "Yes! You can start using PowerWise for free. We may introduce premium features in the future."
-            },
-            "smartDevices": {
-                "question": "Do I need smart home devices?",
-                "answer": "Not at all. PowerWise works without any connected devices — just your phone and motivation."
-            },
-            "aiPersonalization": {
-                "question": "How does the AI coach personalize the experience?",
-                "answer": "The AI learns from your home details, your goals, and your past activity to recommend the best next steps."
-            },
-            "savings": {
-                "question": "How much can I expect to save on my energy bills?",
-                "answer": "Most users see savings of 15-40% on their energy bills within the first few months, depending on their home and how consistently they follow the recommendations."
-            },
-            "privacy": {
-                "question": "Is my data secure and private?",
-                "answer": "Absolutely. We use industry-standard encryption to protect your data and never sell or share your personal information with third parties."
-            }
-        }
+    "privacy": {
+        "title": "Privacy",
+        "description": "We do not share personal data with third parties. Our servers are located in Europe, and we operate on a privacy by design principle. Full GDPR compliance is standard for us.",
+        "fullVersionBefore": "For the full version, see our ",
+        "fullVersionLink": "privacy page",
+        "fullVersionAfter": "."
     },
     "callToAction": {
         "title": "Ready to Start Saving?",
-        "description": "Join thousands of users who are already reducing their energy bills and environmental impact with PowerWise.",
+        "description": "Take your first step today and find out how easy it can be to lower your energy consumption.",
         "downloadNow": "Download Now",
-        "availableOn": "Available on"
+        "municipalityGetInTouch": "Municipality? Get in touch",
+        "imageAlt": "Powerwise AI coach interface showing energy-saving features"
     },
     "footer": {
-        "copyright": "© 2024 PowerWise. All rights reserved.",
+        "copyright": "© 2024 Powerwise. All rights reserved.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
-        "contact": "Contact Us"
+        "contact": "Contact Us",
+        "description": "Less cost. Less CO₂. More comfort.",
+        "features": "Features"
     },
     "navigation": {
         "home": "Home",
         "features": "Features",
         "howItWorks": "How It Works",
-        "whyItMatters": "Why It Matters",
+        "municipalities": "Municipalities",
         "about": "About",
-        "faq": "FAQ"
+        "privacy": "Privacy"
     }
 }

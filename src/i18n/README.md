@@ -51,7 +51,7 @@ Translations are organized in a hierarchical structure:
     "learnMore": "Learn More"
   },
   "hero": {
-    "title": "⚡ PowerWise",
+    "title": "⚡ Powerwise",
     "subtitle": "Cut your energy waste. One smart action at a time."
   },
   "navigation": {

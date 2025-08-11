@@ -1,5 +1,5 @@
 import { Card, CardContent } from "../components/ui/card";
-import { Brain, Lightbulb, Repeat, BarChart3, Trophy } from "lucide-react";
+import { User, Zap, RefreshCw, TrendingUp, MapPin } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -9,29 +9,29 @@ export function Features() {
 
   const features = [
     {
-      icon: Brain,
-      title: t('features.aiEnergyCoach.title'),
-      description: t('features.aiEnergyCoach.description')
+      icon: User,
+      title: t('features.digitalEnergyCoach.title'),
+      description: t('features.digitalEnergyCoach.description')
     },
     {
-      icon: Lightbulb,
-      title: t('features.ecoActions.title'),
-      description: t('features.ecoActions.description')
+      icon: Zap,
+      title: t('features.actions.title'),
+      description: t('features.actions.description')
     },
     {
-      icon: Repeat,
+      icon: RefreshCw,
       title: t('features.sustainableHabits.title'),
       description: t('features.sustainableHabits.description')
     },
     {
-      icon: BarChart3,
-      title: t('features.progressTracking.title'),
-      description: t('features.progressTracking.description')
+      icon: TrendingUp,
+      title: t('features.progressMotivation.title'),
+      description: t('features.progressMotivation.description')
     },
     {
-      icon: Trophy,
-      title: t('features.streaksMotivation.title'),
-      description: t('features.streaksMotivation.description')
+      icon: MapPin,
+      title: t('features.localExpertise.title'),
+      description: t('features.localExpertise.description')
     }
   ];
 

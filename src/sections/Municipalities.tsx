@@ -1,45 +1,48 @@
 import { Card, CardContent } from "../components/ui/card";
-import { Globe, DollarSign, Home, TrendingDown } from "lucide-react";
+import { Users, BarChart3, Lightbulb, BookOpen } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-export function WhyItMatters() {
+export function Municipalities() {
   const { t } = useTranslation();
 
   const impacts = [
     {
-      icon: Globe,
-      title: t('whyItMatters.environmentalImpact.title'),
-      description: t('whyItMatters.environmentalImpact.description')
+      icon: Users,
+      title: t('municipalities.environmentalImpact.title'),
+      description: t('municipalities.environmentalImpact.description')
     },
     {
-      icon: DollarSign,
-      title: t('whyItMatters.energySavings.title'),
-      description: t('whyItMatters.energySavings.description')
+      icon: BarChart3,
+      title: t('municipalities.energySavings.title'),
+      description: t('municipalities.energySavings.description')
     },
     {
-      icon: Home,
-      title: t('whyItMatters.smartHome.title'),
-      description: t('whyItMatters.smartHome.description')
+      icon: Lightbulb,
+      title: t('municipalities.smartHome.title'),
+      description: t('municipalities.smartHome.description')
     },
     {
-      icon: TrendingDown,
-      title: t('whyItMatters.tracking.title'),
-      description: t('whyItMatters.tracking.description')
+      icon: BookOpen,
+      title: t('municipalities.tracking.title'),
+      description: t('municipalities.tracking.description')
     }
   ];
 
   return (
-    <section className="py-20 lg:py-32 bg-muted/30">
+    <section id="municipalities" className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-medium text-foreground mb-6">
-              {t('whyItMatters.title')}
+              {t('municipalities.title')}
             </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
+              {t('municipalities.description1')}
+            </p>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('whyItMatters.description')}
+              {t('municipalities.description2')}
             </p>
           </div>
         </AnimatedSection>

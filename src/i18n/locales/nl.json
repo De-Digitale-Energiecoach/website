@@ -7,9 +7,11 @@
         "about": "Over ons"
     },
     "hero": {
-        "title": "⚡ PowerWise",
+        "intro": "De Digitale Energiecoach presenteert",
+        "title": "Powerwise",
         "subtitle": "Verminder je energieverspilling. Eén slimme actie tegelijk.",
-        "description": "PowerWise is je AI-aangedreven energiecoach die je helpt je energierekening te verlagen en je CO₂-voetafdruk te verminderen door middel van eenvoudige gewoonten en praktische huisverbeteringen.",
+        "description1": "Powerwise is je AI-aangedreven energiecoach die je helpt je energierekening te verlagen en je CO₂-voetafdruk te verminderen door middel van eenvoudige gewoonten en praktische huisverbeteringen.",
+        "description2": "Krijg praktische tips en persoonlijke inzichten die direct impact maken. Doe mee en begin vandaag nog met besparen.",
         "downloadAppStore": "Downloaden in App Store",
         "downloadGooglePlay": "Downloaden in Google Play",
         "aiCoach": "AI Coach",
@@ -18,111 +20,97 @@
         "co2Reduction": "-15% CO₂"
     },
     "features": {
-        "title": "Slimme functies die voor jou werken",
-        "aiEnergyCoach": {
-            "title": "AI Energie Coach",
-            "description": "Gepersonaliseerd advies gebaseerd op je huis, gebruik en doelen"
+        "title": "Functies die besparen makkelijk maken",
+        "digitalEnergyCoach": {
+            "title": "Jouw digitale energiecoach",
+            "description": "Afgestemd op jouw woning en gewoonten."
         },
-        "ecoActions": {
-            "title": "Eco Acties",
-            "description": "Eenmalige taken zoals het vervangen van apparaten of het afdichten van kieren"
+        "actions": {
+            "title": "Acties",
+            "description": "Van eenmalige klussen tot slimme investeringen die blijvende besparing opleveren."
         },
         "sustainableHabits": {
             "title": "Duurzame Gewoonten",
-            "description": "Dagelijkse en wekelijkse routines die het verbruik verlagen"
+            "description": "Dagelijkse en wekelijkse routines die je verbruik structureel verlagen."
         },
-        "progressTracking": {
-            "title": "Voortgang Volgen",
-            "description": "Visuele inzichten in je energie- en CO₂-impact"
+        "progressMotivation": {
+            "title": "Voortgang & Motivatie",
+            "description": "Verdien energiebesparingspunten, houd streaks bij en blijf gemotiveerd."
         },
-        "streaksMotivation": {
-            "title": "Reeksen & Motivatie",
-            "description": "Gewoonte-reeksen, gamification en aanmoediging"
+        "localExpertise": {
+            "title": "Lokale Expertise",
+            "description": "Ontwikkeld voor de Nederlandse markt — met kennis van subsidies en beste praktijken voor Nederlandse huishoudens."
         }
     },
     "howItWorks": {
         "title": "Hoe het werkt",
         "step1": {
             "title": "Verbind je huis",
-            "description": "Vertel ons over je huis, apparaten en energiedoelen"
+            "description": "Vertel ons over je huis en je motivatie. Binnen enkele minuten ben je klaar om energie en geld te besparen."
         },
         "step2": {
-            "title": "Krijg AI-aanbevelingen",
-            "description": "Ontvang gepersonaliseerd advies en actieplannen"
+            "title": "Begin met besparen",
+            "description": "Ontvang gepersonaliseerde acties en tips die je direct kunt toepassen — van kleine dagelijkse gewoonten tot slimme investeringen in huis."
         },
         "step3": {
-            "title": "Volg je voortgang",
-            "description": "Monitor je energiebesparingen en milieueffect"
+            "title": "Scoor & verbeter",
+            "description": "Verdien energiebesparingspunten voor elke actie, houd je reeksen bij en zie hoe jouw keuzes samen een groot verschil maken."
         }
     },
-    "whyItMatters": {
-        "title": "Waarom het belangrijk is",
-        "description": "Energieverspilling is meer dan alleen een hogere rekening — het is een klimaatprobleem. PowerWise geeft je de kracht om een echt verschil te maken door eenvoudige acties te ondernemen die zich opstapelen in de loop van de tijd.",
+    "municipalities": {
+        "title": "Samen werken aan een duurzamere gemeente",
+        "description1": "Onderzoek van TNO laat zien dat energiecoaches bewoners aantoonbaar helpen besparen op hun energierekening. De Universiteit Utrecht toonde aan dat spelelementen mensen extra motiveren om duurzaam gedrag vol te houden.",
+        "description2": "Met Powerwise brengen we deze twee werelden samen in één gebruiksvriendelijke app die bewoners begeleidt én motiveert om energie te besparen.",
         "environmentalImpact": {
-            "title": "Milieu-impact",
-            "description": "Verlaag je CO₂-voetafdruk en help de planeet"
+            "title": "Bereik meer inwoners",
+            "description": "Met Powerwise bereiken en motiveren we meer huishoudens dan traditionele energiecampagnes."
         },
         "energySavings": {
-            "title": "Energiebesparingen",
-            "description": "Verlaag je energierekening met 15-40%"
+            "title": "Meetbare impact",
+            "description": "Zie precies welke acties en gewoontes door inwoners opgepakt worden"
         },
         "smartHome": {
-            "title": "Slim huis",
-            "description": "Maak je huis efficiënter en comfortabeler"
+            "title": "Inzichten die beleid versterken",
+            "description": "Ontvang waardevolle geanonimiseerde data over gedrag en motivatie van inwoners, zodat je je beleid hierop kunt aanpassen."
         },
         "tracking": {
-            "title": "Volg je voortgang",
-            "description": "Zie het cumulatieve effect van je inspanningen"
+            "title": "Gebaseerd op onderzoek",
+            "description": "Gebouwd op bewezen methoden uit onderzoek en praktijk, specifiek voor de Nederlandse markt."
         }
     },
     "aboutUs": {
-        "title": "Over ons",
-        "description": "We zijn gepassioneerd over het helpen van mensen om hun energieverbruik en milieueffect te verminderen. PowerWise combineert AI-technologie met praktisch advies om energie-efficiëntie toegankelijk te maken voor iedereen.",
-        "mission": "Onze missie is om energie-efficiëntie eenvoudig, boeiend en effectief te maken voor elk huishouden."
+        "title": "Wie wij zijn",
+        "description": "Wij zijn een vader-en-zoon team met een gedeelde passie voor slimme technologie en een visie op een duurzame toekomst. Vanuit die drive ontwikkelen we oplossingen die direct bijdragen aan lagere energiekosten en minder CO₂-uitstoot.",
+        "mission": "Met Powerwise ondersteunen we huishoudens én gemeenten om stap voor stap de energietransitie te versnellen. Daarnaast bieden we gemeenten waardevolle inzichten in het gedrag en de motivatie van hun inwoners, zodat beleid en acties nog effectiever worden."
     },
-    "faq": {
-        "title": "Veelgestelde vragen",
-        "questions": {
-            "free": {
-                "question": "Is PowerWise gratis?",
-                "answer": "Ja! Je kunt PowerWise gratis beginnen te gebruiken. We kunnen in de toekomst premium functies introduceren."
-            },
-            "smartDevices": {
-                "question": "Heb ik slimme huisapparaten nodig?",
-                "answer": "Helemaal niet. PowerWise werkt zonder aangesloten apparaten — alleen je telefoon en motivatie."
-            },
-            "aiPersonalization": {
-                "question": "Hoe personaliseert de AI-coach de ervaring?",
-                "answer": "De AI leert van je huisdetails, je doelen en je eerdere activiteit om de beste volgende stappen aan te bevelen."
-            },
-            "savings": {
-                "question": "Hoeveel kan ik verwachten te besparen op mijn energierekening?",
-                "answer": "De meeste gebruikers zien besparingen van 15-40% op hun energierekening binnen de eerste paar maanden, afhankelijk van hun huis en hoe consistent ze de aanbevelingen volgen."
-            },
-            "privacy": {
-                "question": "Zijn mijn gegevens veilig en privé?",
-                "answer": "Absoluut. We gebruiken industrie-standaard encryptie om je gegevens te beschermen en verkopen of delen nooit je persoonlijke informatie met derden."
-            }
-        }
+    "privacy": {
+        "title": "Privacy",
+        "description": "Wij delen geen persoonsgegevens met derden. Onze servers staan in Europa en we werken volgens het principe privacy by design. Volledige AVG-compliance is voor ons vanzelfsprekend.",
+        "fullVersionBefore": "Voor onze uitgebreide versie, bekijk onze ",
+        "fullVersionLink": "privacypagina",
+        "fullVersionAfter": "."
     },
     "callToAction": {
         "title": "Klaar om te beginnen met besparen?",
-        "description": "Doe mee met duizenden gebruikers die al hun energierekening en milieueffect verminderen met PowerWise.",
+        "description": "Zet vandaag je eerste stap en ontdek hoe makkelijk besparen op energie kan zijn.",
         "downloadNow": "Nu downloaden",
-        "availableOn": "Beschikbaar op"
+        "municipalityGetInTouch": "Gemeente? Plan een gesprek",
+        "imageAlt": "Powerwise AI coach interface met energiebesparende functies"
     },
     "footer": {
         "copyright": "© 2024 PowerWise. Alle rechten voorbehouden.",
         "privacy": "Privacybeleid",
         "terms": "Gebruiksvoorwaarden",
-        "contact": "Contact"
+        "contact": "Contact",
+        "description": "Minder kosten. Minder uitstoot. Meer comfort.",
+        "features": "Functies die besparen makkelijk maken"
     },
     "navigation": {
         "home": "Home",
         "features": "Functies",
         "howItWorks": "Hoe het werkt",
-        "whyItMatters": "Waarom het belangrijk is",
+        "municipalities": "Gemeentes",
         "about": "Over ons",
-        "faq": "FAQ"
+        "privacy": "Privacy"
     }
 }

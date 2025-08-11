@@ -1,5 +1,5 @@
 import { Card, CardContent } from "../components/ui/card";
-import { CheckSquare, Target, Brain } from "lucide-react";
+import { Home, Lightbulb, Trophy } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -9,17 +9,17 @@ export function HowItWorks() {
 
   const steps = [
     {
-      icon: CheckSquare,
+      icon: Home,
       title: t('howItWorks.step1.title'),
       description: t('howItWorks.step1.description')
     },
     {
-      icon: Target,
+      icon: Lightbulb,
       title: t('howItWorks.step2.title'),
       description: t('howItWorks.step2.description')
     },
     {
-      icon: Brain,
+      icon: Trophy,
       title: t('howItWorks.step3.title'),
       description: t('howItWorks.step3.description')
     }

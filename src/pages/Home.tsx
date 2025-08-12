@@ -11,6 +11,9 @@ export function Home() {
       <section id="home">
         <Hero />
       </section>
+      <section id="about">
+        <AboutUs />
+      </section>
       <section id="how-it-works">
         <HowItWorks />
       </section>
@@ -20,9 +23,7 @@ export function Home() {
       <section id="municipalities">
         <Municipalities />
       </section>
-      <section id="about">
-        <AboutUs />
-      </section>
+
       <section id="download">
         <CallToAction />
       </section>

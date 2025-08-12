@@ -72,6 +72,12 @@ export function Header() {
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <button
+                onClick={() => handleNavClick('about')}
+                className={getNavItemClasses('about')}
+              >
+                {t('navigation.about')}
+              </button>
+              <button
                 onClick={() => handleNavClick('how-it-works')}
                 className={getNavItemClasses('how-it-works')}
               >
@@ -89,12 +95,7 @@ export function Header() {
               >
                 {t('navigation.municipalities')}
               </button>
-              <button
-                onClick={() => handleNavClick('about')}
-                className={getNavItemClasses('about')}
-              >
-                {t('navigation.about')}
-              </button>
+
             </div>
           </nav>
 
@@ -122,6 +123,12 @@ export function Header() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
               <button
+                onClick={() => handleNavClick('about')}
+                className={`block w-full text-left px-3 py-2 ${getNavItemClasses('about')}`}
+              >
+                {t('navigation.about')}
+              </button>
+              <button
                 onClick={() => handleNavClick('how-it-works')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('how-it-works')}`}
               >
@@ -138,12 +145,6 @@ export function Header() {
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('municipalities')}`}
               >
                 {t('navigation.Municipalities')}
-              </button>
-              <button
-                onClick={() => handleNavClick('about')}
-                className={`block w-full text-left px-3 py-2 ${getNavItemClasses('about')}`}
-              >
-                {t('navigation.about')}
               </button>
               <div className="px-3 py-2 flex gap-2">
                 <LanguageSwitcher />

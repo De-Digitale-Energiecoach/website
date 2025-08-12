@@ -3,8 +3,7 @@
         "download": "Download",
         "learnMore": "Learn More",
         "getStarted": "Get Started",
-        "contact": "Contact",
-        "about": "About"
+        "contact": "Contact"
     },
     "hero": {
         "intro": "The Digital Energy Coach presents",
@@ -110,7 +109,7 @@
         "features": "Features",
         "howItWorks": "How It Works",
         "municipalities": "Municipalities",
-        "about": "About",
+        "about": "About Us",
         "privacy": "Privacy"
     }
 }

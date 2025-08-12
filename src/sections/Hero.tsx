@@ -30,7 +30,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-medium text-primary mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-medium text-foreground mb-6"
             >
               {t('hero.title')}
             </motion.h1>
@@ -38,7 +38,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-foreground mb-6"
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-muted-foreground mb-6"
             >
               {t('hero.subtitle')}
             </motion.h2>
@@ -46,7 +46,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl text-foreground mb-8 max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
+              className="text-xl text-muted-foreground mb-8 max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
             >
               {t('hero.description1')}
             </motion.p>
@@ -54,7 +54,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="text-xl text-foreground mb-8 max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
+              className="text-xl text-muted-foreground mb-8 max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
             >
               {t('hero.description2')}
             </motion.p>

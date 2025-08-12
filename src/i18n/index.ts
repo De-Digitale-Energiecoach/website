@@ -19,7 +19,7 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        fallbackLng: 'en',
+        fallbackLng: 'nl',
         debug: import.meta.env.DEV,
 
         interpolation: {

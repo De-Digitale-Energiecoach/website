@@ -8,13 +8,12 @@
     "hero": {
         "intro": "De Digitale Energiecoach presenteert",
         "title": "Powerwise",
-        "subtitle": "Verminder je energieverspilling. Eén slimme actie tegelijk.",
-        "description1": "Powerwise is je AI-aangedreven energiecoach die je helpt je energierekening te verlagen en je CO₂-voetafdruk te verminderen door middel van eenvoudige gewoonten en praktische huisverbeteringen.",
-        "description2": "Krijg praktische tips en persoonlijke inzichten die direct impact maken. Doe mee en begin vandaag nog met besparen.",
-        "downloadAppStore": "Downloaden in App Store",
-        "downloadGooglePlay": "Downloaden in Google Play",
+        "subtitle": "Meer comfort. Minder verbruik.",
+        "description1": "Powerwise is ontwikkeld door een vader–zoon team met een passie voor technologie en een duurzame toekomst. Powerwise — onze slimme, AI-gedreven energiecoach — helpt je energierekening te verlagen en je CO₂-uitstoot te verminderen.",
+        "description2": "Ontvang praktische tips en persoonlijke inzichten die direct effect hebben. Doe ook mee en begin direct met besparen.",
+        "downloadNow": "Nu downloaden",
         "aiCoach": "AI Coach",
-        "aiCoachMessage": "Zet je thermostaat 2°F lager",
+        "aiCoachMessage": "Zet je thermostaat 1 graad lager",
         "thisWeek": "Deze week",
         "co2Reduction": "-15% CO₂"
     },
@@ -92,12 +91,13 @@
     "callToAction": {
         "title": "Klaar om te beginnen met besparen?",
         "description": "Zet vandaag je eerste stap en ontdek hoe makkelijk besparen op energie kan zijn.",
-        "downloadNow": "Nu downloaden",
+        "downloadAppStore": "Downloaden in App Store",
+        "downloadGooglePlay": "Downloaden in Google Play",
         "municipalityGetInTouch": "Gemeente? Plan een gesprek",
         "imageAlt": "Powerwise AI coach interface met energiebesparende functies"
     },
     "footer": {
-        "copyright": "© 2024 PowerWise. Alle rechten voorbehouden.",
+        "copyright": "© 2025 PowerWise. Alle rechten voorbehouden.",
         "privacy": "Privacybeleid",
         "terms": "Gebruiksvoorwaarden",
         "contact": "Contact",

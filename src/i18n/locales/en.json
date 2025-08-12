@@ -11,10 +11,9 @@
         "subtitle": "More comfort. Less consumption.",
         "description1": "Powerwise is developed by a father–son team with a passion for technology and a sustainable future. Powerwise — our smart, AI-powered energy coach — helps you to lower your energy bills and to reduce your CO₂ footprint.",
         "description2": "Get practical tips and personal insights that make an immediate impact. Join us and start saving today.",
-        "downloadAppStore": "Download on App Store",
-        "downloadGooglePlay": "Get it on Google Play",
+        "downloadNow": "Download Now",
         "aiCoach": "AI Coach",
-        "aiCoachMessage": "Turn down your thermostat by 2°F",
+        "aiCoachMessage": "Turn down your thermostat by 1 degree",
         "thisWeek": "This week",
         "co2Reduction": "-15% CO₂"
     },
@@ -92,12 +91,13 @@
     "callToAction": {
         "title": "Ready to Start Saving?",
         "description": "Take your first step today and find out how easy it can be to lower your energy consumption.",
-        "downloadNow": "Download Now",
+        "downloadAppStore": "Download on App Store",
+        "downloadGooglePlay": "Get it on Google Play",
         "municipalityGetInTouch": "Municipality? Get in touch",
         "imageAlt": "Powerwise AI coach interface showing energy-saving features"
     },
     "footer": {
-        "copyright": "© 2024 Powerwise. All rights reserved.",
+        "copyright": "© 2025 Powerwise. All rights reserved.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
         "contact": "Contact Us",

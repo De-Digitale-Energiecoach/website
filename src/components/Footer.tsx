@@ -20,8 +20,7 @@ export function Footer() {
         <div className="mb-12 pb-8 border-b">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Shield className="h-6 w-6 text-primary" />
+              <div className="mb-4">
                 <h3 className="text-xl font-medium text-foreground">{t('privacy.title')}</h3>
               </div>
               <div className="space-y-3 text-muted-foreground">
@@ -37,7 +36,7 @@ export function Footer() {
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="w-48 h-32 bg-muted/50 rounded-lg flex items-center justify-center">
-                <Shield className="h-16 w-16 text-muted-foreground/30" />
+                <Shield className="h-20 w-20 text-muted-foreground/30" />
               </div>
             </div>
           </div>

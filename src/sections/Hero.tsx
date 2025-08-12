@@ -62,15 +62,20 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex justify-center lg:justify-start"
             >
-              <Button size="lg" className="h-14 px-8">
-                <Apple className="mr-2 h-5 w-5" />
-                {t('hero.downloadAppStore')}
-              </Button>
-              <Button size="lg" className="h-14 px-8">
+              <Button
+                size="lg"
+                className="h-14 px-8"
+                onClick={() => {
+                  const element = document.getElementById('download');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 <Smartphone className="mr-2 h-5 w-5" />
-                {t('hero.downloadGooglePlay')}
+                {t('hero.downloadNow')}
               </Button>
             </motion.div>
           </motion.div>

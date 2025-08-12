@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/button";
 import { ImageWithFallback } from "../components/ui/ImageWithFallback";
-import { Smartphone, ArrowRight } from "lucide-react";
+import { Smartphone, ArrowRight, Apple } from "lucide-react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -29,15 +29,23 @@ export function CallToAction() {
                 {t('callToAction.description')}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button variant="secondary" size="lg" className="h-14 px-8">
-                  <Smartphone className="mr-2 h-5 w-5" />
-                  {t('callToAction.downloadNow')}
-                </Button>
-                <Button variant="outline" size="lg" className="h-14 px-8 border-primary-foreground/20 hover:bg-primary-foreground/10">
-                  <ArrowRight className="mr-2 h-5 w-5" />
-                  {t('callToAction.municipalityGetInTouch')}
-                </Button>
+              <div className="flex flex-col gap-4 justify-center lg:justify-start">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Button variant="secondary" size="lg" className="h-14 px-8">
+                    <Apple className="mr-2 h-5 w-5" />
+                    {t('callToAction.downloadAppStore')}
+                  </Button>
+                  <Button variant="secondary" size="lg" className="h-14 px-8">
+                    <Smartphone className="mr-2 h-5 w-5" />
+                    {t('callToAction.downloadGooglePlay')}
+                  </Button>
+                </div>
+                <div className="flex justify-center lg:justify-start">
+                  <Button variant="link" className="text-white min-w-[200px]">
+                    <ArrowRight className="mr-2 h-5 w-5" />
+                    {t('callToAction.municipalityGetInTouch')}
+                  </Button>
+                </div>
               </div>
             </div>
           </AnimatedSection>

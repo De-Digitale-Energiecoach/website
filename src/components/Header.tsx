@@ -8,6 +8,7 @@ import iconImage from "../assets/icon.png";
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [showDownloadButton, setShowDownloadButton] = useState(false);
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -33,6 +34,23 @@ export function Header() {
     });
 
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.getElementById('home');
+      if (heroSection) {
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        const scrollPosition = window.scrollY;
+        // Only show button when user has scrolled past 80% of the hero section
+        setShowDownloadButton(scrollPosition > heroBottom * 0.8);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial position
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleNavClick = (sectionId: string) => {
@@ -101,9 +119,11 @@ export function Header() {
 
           <div className="hidden md:flex items-center gap-4">
             <LanguageSwitcher />
-            <Button onClick={() => handleNavClick('download')}>
-              {t('common.download')}
-            </Button>
+            {showDownloadButton && (
+              <Button onClick={() => handleNavClick('download')}>
+                {t('common.download')}
+              </Button>
+            )}
           </div>
 
           {/* Mobile menu button */}

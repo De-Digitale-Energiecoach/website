@@ -3,7 +3,8 @@
         "download": "Download",
         "learnMore": "Learn More",
         "getStarted": "Get Started",
-        "contact": "Contact"
+        "contact": "Contact",
+        "back": "Back"
     },
     "hero": {
         "intro": "The Digital Energy Coach presents",
@@ -88,6 +89,68 @@
         "fullVersionLink": "privacy page",
         "fullVersionAfter": "."
     },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last Updated",
+        "date": "January 15, 2025",
+        "introduction": {
+            "title": "Introduction",
+            "description1": "Powerwise (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services.",
+            "description2": "By using Powerwise, you agree to the collection and use of information in accordance with this policy. We are committed to transparency and will always inform you about how we handle your data."
+        },
+        "informationWeCollect": {
+            "title": "Information We Collect",
+            "personalData": {
+                "title": "Personal Data",
+                "item1": "Name and contact information (email address, phone number)",
+                "item2": "Home address and property details",
+                "item3": "Energy consumption data and usage patterns",
+                "item4": "Device information and app usage statistics"
+            },
+            "usageData": {
+                "title": "Usage Data",
+                "item1": "App interaction patterns and feature usage",
+                "item2": "Energy-saving actions and progress tracking",
+                "item3": "Performance metrics and error logs"
+            }
+        },
+        "howWeUse": {
+            "title": "How We Use Your Information",
+            "description": "We use the collected information for the following purposes:",
+            "purpose1": "To provide and maintain our energy coaching services",
+            "purpose2": "To personalize your experience and provide relevant recommendations",
+            "purpose3": "To track your progress and motivate continued energy savings",
+            "purpose4": "To improve our app functionality and user experience",
+            "purpose5": "To communicate important updates and energy-saving opportunities"
+        },
+        "dataSharing": {
+            "title": "Data Sharing and Disclosure",
+            "description": "We are committed to protecting your privacy and do not sell, trade, or otherwise transfer your personal information to third parties without your explicit consent.",
+            "important": "Important:",
+            "noThirdParty": "We do not share personal data with third parties. Our servers are located in Europe, and we operate on a privacy by design principle. Full GDPR compliance is standard for us."
+        },
+        "dataSecurity": {
+            "title": "Data Security",
+            "description": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+            "measure1": "Encryption of data in transit and at rest",
+            "measure2": "Regular security audits and vulnerability assessments",
+            "measure3": "Access controls and authentication mechanisms",
+            "measure4": "Compliance with EU data protection regulations"
+        },
+        "yourRights": {
+            "title": "Your Rights",
+            "description": "Under GDPR and other applicable data protection laws, you have the following rights regarding your personal data:",
+            "right1": "Right to access and review your personal data",
+            "right2": "Right to correct inaccurate or incomplete information",
+            "right3": "Right to delete your personal data",
+            "right4": "Right to restrict or object to data processing",
+            "right5": "Right to data portability and transfer"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "If you have any questions about this Privacy Policy or our data practices, please contact us:"
+        }
+    },
     "callToAction": {
         "title": "Ready to Start Saving?",
         "description": "Take your first step today and find out how easy it can be to lower your energy consumption.",
@@ -103,6 +166,83 @@
         "contact": "Contact Us",
         "description": "Less cost. Less CO₂. More comfort.",
         "features": "Features"
+    },
+    "termsOfUse": {
+        "title": "Terms of Use",
+        "lastUpdated": "Last Updated",
+        "date": "January 15, 2025",
+        "introduction": {
+            "title": "Introduction",
+            "description1": "Welcome to Powerwise! These Terms of Use (\"Terms\") govern your use of our mobile application and related services. By downloading, installing, or using Powerwise, you agree to be bound by these Terms.",
+            "description2": "If you do not agree to these Terms, please do not use our services. We reserve the right to modify these Terms at any time, and your continued use of the service constitutes acceptance of any changes."
+        },
+        "acceptance": {
+            "title": "Acceptance of Terms",
+            "description": "By using Powerwise, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. These Terms constitute a legally binding agreement between you and Powerwise.",
+            "important": "Your continued use of the service indicates your acceptance of these terms."
+        },
+        "serviceDescription": {
+            "title": "Description of Service",
+            "description": "Powerwise is a digital energy coaching application that provides:",
+            "feature1": "Personalized energy-saving recommendations and tips",
+            "feature2": "Progress tracking and motivation features",
+            "feature3": "AI-powered coaching and insights",
+            "feature4": "Local market knowledge and subsidy information"
+        },
+        "userResponsibilities": {
+            "title": "User Responsibilities",
+            "description": "As a user of Powerwise, you agree to:",
+            "responsibility1": "Provide accurate and truthful information about your home and energy usage",
+            "responsibility2": "Use the app responsibly and in accordance with applicable laws",
+            "responsibility3": "Maintain the security of your account credentials",
+            "responsibility4": "Report any bugs or issues you encounter",
+            "responsibility5": "Respect the intellectual property rights of Powerwise and third parties"
+        },
+        "prohibitedUses": {
+            "title": "Prohibited Uses",
+            "description": "You agree not to use Powerwise for any unlawful or prohibited purpose, including:",
+            "prohibition1": "Attempting to gain unauthorized access to our systems or other users' accounts",
+            "prohibition2": "Using the service to transmit harmful, offensive, or inappropriate content",
+            "prohibition3": "Reverse engineering, decompiling, or disassembling the application",
+            "prohibition4": "Using the service for commercial purposes without our written consent",
+            "prohibition5": "Violating any applicable laws or regulations"
+        },
+        "intellectualProperty": {
+            "title": "Intellectual Property Rights",
+            "description": "Powerwise and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.",
+            "important": "Important:",
+            "rights": "You retain ownership of your personal data, but we retain all rights to our app, technology, and intellectual property."
+        },
+        "privacyAndData": {
+            "title": "Privacy and Data Protection",
+            "description": "Your privacy is important to us. Our collection and use of personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference.",
+            "reference": "Please review our Privacy Policy to understand our practices."
+        },
+        "limitationOfLiability": {
+            "title": "Limitation of Liability",
+            "description": "To the maximum extent permitted by law, Powerwise shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use.",
+            "disclaimer": "Our service is provided 'as is' without warranties of any kind."
+        },
+        "termination": {
+            "title": "Termination",
+            "description": "We may terminate or suspend your access to Powerwise immediately, without prior notice, for any reason, including:",
+            "reason1": "Breach of these Terms of Use",
+            "reason2": "Violation of applicable laws or regulations",
+            "reason3": "At your request or for any other legitimate business reason"
+        },
+        "changesToTerms": {
+            "title": "Changes to Terms",
+            "description": "We reserve the right to modify these Terms at any time. We will notify users of any material changes through the app or via email.",
+            "notification": "Your continued use of the service after such modifications constitutes acceptance of the updated Terms."
+        },
+        "governingLaw": {
+            "title": "Governing Law",
+            "description": "These Terms shall be governed by and construed in accordance with the laws of the Netherlands, without regard to its conflict of law provisions."
+        },
+        "contact": {
+            "title": "Contact Information",
+            "description": "If you have any questions about these Terms of Use, please contact us:"
+        }
     },
     "navigation": {
         "home": "Home",

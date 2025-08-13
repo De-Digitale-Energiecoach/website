@@ -1,5 +1,5 @@
 import { Separator } from "./ui/separator";
-import { Linkedin, Mail, MapPin, Shield } from "lucide-react";
+import { Linkedin, Mail, MapPin, Phone, Shield } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import iconImage from "../assets/icon.png";
 
@@ -109,6 +109,10 @@ export function Footer() {
           <div>
             <h3 className="font-medium text-foreground mb-4">Contact</h3>
             <div className="space-y-2">
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Phone className="h-4 w-4" />
+                <span>0623429129</span>
+              </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
                 <span>info@dedigitaleenergiecoach.nl</span>

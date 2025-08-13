@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "../components/ui/ImageWithFallback";
-import { Apple, Smartphone } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
 import ecoHouseImage from "../assets/hero.png";
 import { Button } from "../components/ui/button";

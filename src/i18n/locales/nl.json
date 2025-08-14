@@ -3,7 +3,8 @@
         "download": "Downloaden",
         "learnMore": "Meer informatie",
         "getStarted": "Aan de slag",
-        "contact": "Contact"
+        "contact": "Contact",
+        "back": "Terug"
     },
     "hero": {
         "intro": "De Digitale Energiecoach presenteert",
@@ -88,6 +89,68 @@
         "fullVersionLink": "privacypagina",
         "fullVersionAfter": "."
     },
+    "privacyPolicy": {
+        "title": "Privacybeleid",
+        "lastUpdated": "Laatst bijgewerkt",
+        "date": "15 januari 2025",
+        "introduction": {
+            "title": "Inleiding",
+            "description1": "Powerwise (\"wij,\" \"ons,\" of \"onze\") is toegewijd aan het beschermen van je privacy en het waarborgen van de veiligheid van je persoonlijke informatie. Dit Privacybeleid legt uit hoe we je informatie verzamelen, gebruiken, bekendmaken en beschermen wanneer je onze mobiele applicatie en gerelateerde diensten gebruikt.",
+            "description2": "Door Powerwise te gebruiken ga je akkoord met de verzameling en het gebruik van informatie in overeenstemming met dit beleid. Wij zijn toegewijd aan transparantie en zullen je altijd informeren over hoe we met je gegevens omgaan."
+        },
+        "informationWeCollect": {
+            "title": "Informatie die we verzamelen",
+            "personalData": {
+                "title": "Persoonlijke gegevens",
+                "item1": "Naam en contactgegevens (e-mailadres, telefoonnummer)",
+                "item2": "Huisadres en eigendomsdetails",
+                "item3": "Energieverbruiksgegevens en gebruikspatronen",
+                "item4": "Apparaatinformatie en app-gebruiksstatistieken"
+            },
+            "usageData": {
+                "title": "Gebruiksgegevens",
+                "item1": "App-interactiepatronen en functiegebruik",
+                "item2": "Energiebesparende acties en voortgangsregistratie",
+                "item3": "Prestatiemetrieken en foutlogboeken"
+            }
+        },
+        "howWeUse": {
+            "title": "Hoe we je informatie gebruiken",
+            "description": "We gebruiken de verzamelde informatie voor de volgende doeleinden:",
+            "purpose1": "Om onze energiecoachingdiensten te leveren en te onderhouden",
+            "purpose2": "Om je ervaring te personaliseren en relevante aanbevelingen te geven",
+            "purpose3": "Om je voortgang bij te houden en je te motiveren om door te gaan met energiebesparing",
+            "purpose4": "Om onze app-functionaliteit en gebruikerservaring te verbeteren",
+            "purpose5": "Om belangrijke updates en energiebesparende mogelijkheden te communiceren"
+        },
+        "dataSharing": {
+            "title": "Gegevensdeling en bekendmaking",
+            "description": "Wij zijn toegewijd aan het beschermen van je privacy en verkopen, verhandelen of dragen je persoonlijke informatie niet over aan derden zonder je uitdrukkelijke toestemming.",
+            "important": "Belangrijk:",
+            "noThirdParty": "Wij delen geen persoonsgegevens met derden. Onze servers staan in Europa en we werken volgens het principe privacy by design. Volledige AVG-compliance is voor ons vanzelfsprekend."
+        },
+        "dataSecurity": {
+            "title": "Gegevensbeveiliging",
+            "description": "We implementeren passende technische en organisatorische beveiligingsmaatregelen om je persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging, bekendmaking of vernietiging.",
+            "measure1": "Versleuteling van gegevens tijdens transport en in rust",
+            "measure2": "Regelmatige beveiligingsaudits en kwetsbaarheidsbeoordelingen",
+            "measure3": "Toegangscontroles en authenticatiemechanismen",
+            "measure4": "Naleving van EU-gegevensbeschermingsregelgeving"
+        },
+        "yourRights": {
+            "title": "Jouw rechten",
+            "description": "Onder de AVG en andere toepasselijke gegevensbeschermingswetten heb je de volgende rechten met betrekking tot je persoonlijke gegevens:",
+            "right1": "Recht op toegang tot en controle van je persoonlijke gegevens",
+            "right2": "Recht op correctie van onjuiste of onvolledige informatie",
+            "right3": "Recht op verwijdering van je persoonlijke gegevens",
+            "right4": "Recht op beperking van of bezwaar tegen gegevensverwerking",
+            "right5": "Recht op gegevensportabiliteit en overdracht"
+        },
+        "contact": {
+            "title": "Neem contact met ons op",
+            "description": "Als je vragen hebt over dit Privacybeleid of onze gegevenspraktijken, neem dan contact met ons op:"
+        }
+    },
     "callToAction": {
         "title": "Klaar om te beginnen met besparen?",
         "description": "Zet vandaag je eerste stap en ontdek hoe makkelijk besparen op energie kan zijn.",
@@ -103,6 +166,83 @@
         "contact": "Contact",
         "description": "Minder kosten. Minder uitstoot. Meer comfort.",
         "features": "Functies die besparen makkelijk maken"
+    },
+    "termsOfUse": {
+        "title": "Gebruiksvoorwaarden",
+        "lastUpdated": "Laatst bijgewerkt",
+        "date": "15 januari 2025",
+        "introduction": {
+            "title": "Inleiding",
+            "description1": "Welkom bij Powerwise! Deze Gebruiksvoorwaarden (\"Voorwaarden\") regelen je gebruik van onze mobiele applicatie en gerelateerde diensten. Door Powerwise te downloaden, installeren of gebruiken ga je akkoord met deze Voorwaarden.",
+            "description2": "Als je niet akkoord gaat met deze Voorwaarden, gebruik dan onze diensten niet. We behouden ons het recht voor om deze Voorwaarden op elk moment te wijzigen, en je voortgezette gebruik van de dienst betekent acceptatie van eventuele wijzigingen."
+        },
+        "acceptance": {
+            "title": "Acceptatie van voorwaarden",
+            "description": "Door Powerwise te gebruiken bevestig je dat je deze Gebruiksvoorwaarden hebt gelezen, begrepen en ermee akkoord gaat. Deze Voorwaarden vormen een juridisch bindende overeenkomst tussen jou en Powerwise.",
+            "important": "Je voortgezette gebruik van de dienst geeft aan dat je deze voorwaarden accepteert."
+        },
+        "serviceDescription": {
+            "title": "Beschrijving van de dienst",
+            "description": "Powerwise is een digitale energiecoaching-applicatie die het volgende biedt:",
+            "feature1": "Gepersonaliseerde energiebesparende aanbevelingen en tips",
+            "feature2": "Voortgangsregistratie en motivatiefuncties",
+            "feature3": "AI-gedreven coaching en inzichten",
+            "feature4": "Lokale marktkennis en subsidie-informatie"
+        },
+        "userResponsibilities": {
+            "title": "Gebruikersverantwoordelijkheden",
+            "description": "Als gebruiker van Powerwise ga je akkoord met:",
+            "responsibility1": "Het verstrekken van accurate en waarheidsgetrouwe informatie over je huis en energieverbruik",
+            "responsibility2": "Het verantwoordelijk gebruik van de app in overeenstemming met toepasselijke wetten",
+            "responsibility3": "Het behoud van de veiligheid van je accountgegevens",
+            "responsibility4": "Het melden van eventuele bugs of problemen die je tegenkomt",
+            "responsibility5": "Het respecteren van de intellectuele eigendomsrechten van Powerwise en derden"
+        },
+        "prohibitedUses": {
+            "title": "Verboden gebruik",
+            "description": "Je gaat akkoord met het niet gebruiken van Powerwise voor enig onwettig of verboden doel, inclusief:",
+            "prohibition1": "Pogingen om ongeautoriseerde toegang te krijgen tot onze systemen of accounts van andere gebruikers",
+            "prohibition2": "Het gebruik van de dienst voor het verzenden van schadelijke, aanstootgevende of ongepaste inhoud",
+            "prohibition3": "Reverse engineering, decompilatie of demontage van de applicatie",
+            "prohibition4": "Het gebruik van de dienst voor commerciële doeleinden zonder onze schriftelijke toestemming",
+            "prohibition5": "Het schenden van toepasselijke wetten of regelgeving"
+        },
+        "intellectualProperty": {
+            "title": "Intellectuele eigendomsrechten",
+            "description": "Powerwise en de originele inhoud, functies en functionaliteit zijn eigendom van ons en worden beschermd door internationale auteursrecht-, handelsmerk-, octrooi-, handelsgeheim- en andere intellectuele eigendomswetten.",
+            "important": "Belangrijk:",
+            "rights": "Je behoudt eigendom van je persoonlijke gegevens, maar wij behouden alle rechten op onze app, technologie en intellectuele eigendom."
+        },
+        "privacyAndData": {
+            "title": "Privacy en gegevensbescherming",
+            "description": "Je privacy is belangrijk voor ons. Onze verzameling en het gebruik van persoonlijke informatie wordt geregeld door ons Privacybeleid, dat bij verwijzing in deze Voorwaarden is opgenomen.",
+            "reference": "Bekijk ons Privacybeleid om onze praktijken te begrijpen."
+        },
+        "limitationOfLiability": {
+            "title": "Aansprakelijkheidsbeperking",
+            "description": "Voor zover wettelijk toegestaan is Powerwise niet aansprakelijk voor enige indirecte, incidentele, bijzondere, gevolgschade of strafschade, inclusief maar niet beperkt tot verlies van winst, gegevens of gebruik.",
+            "disclaimer": "Onze dienst wordt geleverd 'zoals deze is' zonder garanties van welke aard dan ook."
+        },
+        "termination": {
+            "title": "Beëindiging",
+            "description": "We kunnen je toegang tot Powerwise onmiddellijk beëindigen of opschorten, zonder voorafgaande kennisgeving, om welke reden dan ook, inclusief:",
+            "reason1": "Schending van deze Gebruiksvoorwaarden",
+            "reason2": "Schending van toepasselijke wetten of regelgeving",
+            "reason3": "Op je verzoek of om andere legitieme zakelijke redenen"
+        },
+        "changesToTerms": {
+            "title": "Wijzigingen in voorwaarden",
+            "description": "We behouden ons het recht voor om deze Voorwaarden op elk moment te wijzigen. We zullen gebruikers op de hoogte stellen van eventuele materiële wijzigingen via de app of per e-mail.",
+            "notification": "Je voortgezette gebruik van de dienst na dergelijke wijzigingen betekent acceptatie van de bijgewerkte Voorwaarden."
+        },
+        "governingLaw": {
+            "title": "Toepasselijk recht",
+            "description": "Deze Voorwaarden worden beheerst door en uitgelegd in overeenstemming met de wetten van Nederland, zonder rekening te houden met de conflictenrechtelijke bepalingen."
+        },
+        "contact": {
+            "title": "Contactgegevens",
+            "description": "Als je vragen hebt over deze Gebruiksvoorwaarden, neem dan contact met ons op:"
+        }
     },
     "navigation": {
         "home": "Home",

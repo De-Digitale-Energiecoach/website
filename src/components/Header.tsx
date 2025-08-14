@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import iconImage from "../assets/icon.png";
 
@@ -10,8 +11,19 @@ export function Header() {
   const [activeSection, setActiveSection] = useState('home');
   const [showDownloadButton, setShowDownloadButton] = useState(false);
   const { t } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Check if we're on the home page
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
+    // Only observe sections if we're on the home page
+    if (!isHomePage) {
+      setActiveSection('');
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -34,9 +46,15 @@ export function Header() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [isHomePage]);
 
   useEffect(() => {
+    // Only handle scroll for download button if we're on the home page
+    if (!isHomePage) {
+      setShowDownloadButton(false);
+      return;
+    }
+
     const handleScroll = () => {
       const heroSection = document.getElementById('home');
       if (heroSection) {
@@ -51,17 +69,36 @@ export function Header() {
     handleScroll(); // Check initial position
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isHomePage]);
 
   const handleNavClick = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (isHomePage) {
+      // If on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on other pages, navigate to home page and then scroll to section
+      navigate('/', { state: { scrollTo: sectionId } });
     }
     setIsMenuOpen(false);
   };
 
+  const handleLogoClick = () => {
+    if (isHomePage) {
+      // If on home page, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // If on other pages, navigate to home page
+      navigate('/');
+    }
+  };
+
   const getNavItemClasses = (sectionId: string) => {
+    if (!isHomePage) {
+      return 'transition-colors text-foreground hover:text-primary';
+    }
     return `transition-colors ${activeSection === sectionId
       ? 'text-primary font-medium'
       : 'text-foreground hover:text-primary'
@@ -75,7 +112,7 @@ export function Header() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <button
-                onClick={() => handleNavClick('home')}
+                onClick={handleLogoClick}
                 className="flex items-center gap-2 hover:opacity-80 transition-opacity"
               >
                 <div className="w-12 h-16 rounded-lg flex items-center justify-center">
@@ -164,7 +201,7 @@ export function Header() {
                 onClick={() => handleNavClick('municipalities')}
                 className={`block w-full text-left px-3 py-2 ${getNavItemClasses('municipalities')}`}
               >
-                {t('navigation.Municipalities')}
+                {t('navigation.municipalities')}
               </button>
               <div className="px-3 py-2 flex gap-2">
                 <LanguageSwitcher />

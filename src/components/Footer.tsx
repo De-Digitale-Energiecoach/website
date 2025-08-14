@@ -1,5 +1,5 @@
 import { Separator } from "./ui/separator";
-import { Linkedin, Mail, MapPin, Phone, Shield } from "lucide-react";
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import iconImage from "../assets/icon.png";
 
@@ -16,31 +16,7 @@ export function Footer() {
   return (
     <footer className="bg-background border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Privacy Section */}
-        <div className="mb-12 pb-8 border-b">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="mb-4">
-                <h3 className="text-xl font-medium text-foreground">{t('privacy.title')}</h3>
-              </div>
-              <div className="space-y-3 text-muted-foreground">
-                <p>{t('privacy.description')}</p>
-                <p>
-                  {t('privacy.fullVersionBefore')}
-                  <a href="#" className="text-primary hover:underline">
-                    {t('privacy.fullVersionLink')}
-                  </a>
-                  {t('privacy.fullVersionAfter')}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-48 h-32 bg-muted/50 rounded-lg flex items-center justify-center">
-                <Shield className="h-20 w-20 text-muted-foreground/30" />
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -100,8 +76,8 @@ export function Footer() {
               >
                 {t('navigation.about')}
               </button>
-              <a href="#" className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors">{t('footer.privacy')}</a>
-              <a href="#" className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors">{t('footer.terms')}</a>
+              <a href="/privacy-policy" className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors">{t('footer.privacy')}</a>
+              <a href="/terms-of-use" className="block text-left w-full text-muted-foreground hover:text-foreground transition-colors">{t('footer.terms')}</a>
             </div>
           </div>
 
@@ -132,10 +108,10 @@ export function Footer() {
             {t('footer.copyright')}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/privacy-policy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               {t('footer.privacy')}
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/terms-of-use" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               {t('footer.terms')}
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

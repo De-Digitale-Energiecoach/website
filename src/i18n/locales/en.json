@@ -77,10 +77,25 @@
             "description": "Built on proven methods from research and practice, designed specifically for the Dutch market."
         }
     },
-    "aboutUs": {
-        "title": "Who we are",
-        "description": "We are a father-and-son team with a shared passion for smart technology and a vision for a sustainable future. Driven by this mission, we develop solutions that directly contribute to lower energy costs and reduced CO₂ emissions.",
-        "mission": "With Powerwise, we support households and municipalities in accelerating the energy transition step by step. In addition, we provide municipalities with valuable insights into the behaviour and motivation of their residents, enabling more effective policies and actions."
+    "about": {
+        "powerwise": {
+            "title": "About Powerwise",
+            "description": "With Powerwise, we support households and municipalities in accelerating the energy transition step by step. In addition, we provide municipalities with valuable insights into the behaviour and motivation of their residents, enabling more effective policies and actions."
+        },
+        "team": {
+            "title": "Who we are",
+            "description": "We are a father-and-son team with a shared passion for smart technology and a vision for a sustainable future. Driven by this mission, we develop solutions that directly contribute to lower energy costs and reduced CO₂ emissions.",
+            "geert": {
+                "name": "Geert",
+                "role": "Founder",
+                "story": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "gerard": {
+                "name": "Gerard",
+                "role": "Founder",
+                "story": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        }
     },
     "privacy": {
         "title": "Privacy",

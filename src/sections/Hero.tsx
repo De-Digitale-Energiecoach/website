@@ -1,7 +1,7 @@
 import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 import { Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
-import ecoHouseImage from "../assets/hero.png";
+import teamImage from "../assets/team/team.jpeg";
 import { Button } from "../components/ui/button";
 import { useTranslation } from "react-i18next";
 
@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-secondary/30 to-accent/50">
       <div className="container mx-auto px-8 sm:px-12 lg:px-20 py-20 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-40 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -86,35 +86,11 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="relative"
           >
-            <div className="relative mx-auto w-80 h-96 lg:w-96 lg:h-[500px]">
-              <ImageWithFallback
-                src={ecoHouseImage}
-                alt="Powerwise eco house illustration"
-                className="w-full h-full object-cover rounded-3xl shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl"></div>
-
-              {/* Floating UI elements */}
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-                className="absolute -top-4 -right-4 bg-card p-4 rounded-xl shadow-lg border border-primary/20"
-              >
-                <div className="text-base text-muted-foreground mb-1">{t('hero.aiCoach')}</div>
-                <div className="text-base font-medium text-foreground">{t('hero.aiCoachMessage')}</div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.4 }}
-                className="absolute -bottom-4 -left-4 bg-card p-4 rounded-xl shadow-lg border border-primary/20"
-              >
-                <div className="text-base text-muted-foreground mb-1">{t('hero.thisWeek')}</div>
-                <div className="text-xl font-medium text-primary">{t('hero.co2Reduction')}</div>
-              </motion.div>
-            </div>
+            <ImageWithFallback
+              src={teamImage}
+              alt="Team working on sustainable energy solutions"
+              className="w-full h-96 object-cover rounded-2xl shadow-xl"
+            />
           </motion.div>
         </div>
       </div>

@@ -10,7 +10,7 @@
         "intro": "De Digitale Energiecoach presenteert",
         "title": "Powerwise",
         "subtitle": "Meer comfort. Minder verbruik.",
-        "description1": "Powerwise is ontwikkeld door een vader–zoon team met een passie voor technologie en een duurzame toekomst. Powerwise — onze slimme, AI-gedreven energiecoach — helpt je energierekening te verlagen en je CO₂-uitstoot te verminderen.",
+        "description1": "Powerwise — onze slimme, AI-gedreven energiecoach — helpt je energierekening te verlagen en je CO₂-uitstoot te verminderen.",
         "description2": "Ontvang praktische tips en persoonlijke inzichten die direct effect hebben. Doe ook mee en begin direct met besparen.",
         "downloadNow": "Nu downloaden",
         "aiCoach": "AI Coach",
@@ -78,23 +78,18 @@
         }
     },
     "about": {
-        "powerwise": {
-            "title": "Over Powerwise",
-            "description": "Met Powerwise ondersteunen we huishoudens én gemeenten om stap voor stap de energietransitie te versnellen. Daarnaast bieden we gemeenten waardevolle inzichten in het gedrag en de motivatie van hun inwoners, zodat beleid en acties nog effectiever worden."
+        "title": "Wie wij zijn",
+        "description": "Wij zijn een vader-en-zoon team met een gedeelde passie voor slimme technologie en een visie op een duurzame toekomst. Vanuit die drive ontwikkelen we oplossingen die direct bijdragen aan lagere energiekosten en minder CO₂-uitstoot.",
+        "description2": "Met Powerwise ondersteunen we huishoudens én gemeenten om stap voor stap de energietransitie te versnellen. Daarnaast bieden we gemeenten waardevolle inzichten in het gedrag en de motivatie van hun inwoners, zodat beleid en acties nog effectiever worden.",
+        "geert": {
+            "name": "Geert",
+            "role": "Co-founder",
+            "story": "10 jaar data-analist met maatschappelijke impact bij de Gemeente Amsterdam en NHG."
         },
-        "team": {
-            "title": "Wie wij zijn",
-            "description": "Wij zijn een vader-en-zoon team met een gedeelde passie voor slimme technologie en een visie op een duurzame toekomst. Vanuit die drive ontwikkelen we oplossingen die direct bijdragen aan lagere energiekosten en minder CO₂-uitstoot.",
-            "geert": {
-                "name": "Geert",
-                "role": "Founder",
-                "story": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            },
-            "gerard": {
-                "name": "Gerard",
-                "role": "Founder",
-                "story": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            }
+        "gerard": {
+            "name": "Gerard",
+            "role": "Co-founder",
+            "story": "IT- en finance-expert met een passie voor technologie."
         }
     },
     "privacy": {

@@ -7,7 +7,6 @@ import { Card, CardContent } from "../components/ui/card";
 import { useState } from "react";
 import geert from "../assets/team/geert.jpeg";
 import gerard from "../assets/team/gerard.jpeg";
-import { t } from "i18next";
 
 interface TeamMember {
   name: string;
@@ -16,23 +15,23 @@ interface TeamMember {
   story: string;
 }
 
-const teamMembers: TeamMember[] = [
-  {
-    name: t('about.geert.name'),
-    role: t('about.geert.role'),
-    image: geert,
-    story: t('about.geert.story')
-  },
-  {
-    name: t('about.gerard.name'),
-    role: t('about.gerard.role'),
-    image: gerard,
-    story: t('about.gerard.story')
-  }
-];
-
 export function AboutUs() {
   const { t } = useTranslation();
+
+  const teamMembers: TeamMember[] = [
+    {
+      name: t('about.geert.name'),
+      role: t('about.geert.role'),
+      image: geert,
+      story: t('about.geert.story')
+    },
+    {
+      name: t('about.gerard.name'),
+      role: t('about.gerard.role'),
+      image: gerard,
+      story: t('about.gerard.story')
+    }
+  ];
 
   return (
     <section>

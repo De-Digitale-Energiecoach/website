@@ -13,6 +13,8 @@ interface TeamMember {
   role: string;
   image: string;
   story: string;
+  linkedin: string;
+  email: string;
 }
 
 export function AboutUs() {
@@ -23,13 +25,17 @@ export function AboutUs() {
       name: t('about.geert.name'),
       role: t('about.geert.role'),
       image: geert,
-      story: t('about.geert.story')
+      story: t('about.geert.story'),
+      linkedin: "https://www.linkedin.com/in/geert-van-reeken",
+      email: "geert@dedigitaleenergiecoach.nl"
     },
     {
       name: t('about.gerard.name'),
       role: t('about.gerard.role'),
       image: gerard,
-      story: t('about.gerard.story')
+      story: t('about.gerard.story'),
+      linkedin: "https://www.linkedin.com/in/gerardvanreekenx/",
+      email: "gerard@dedigitaleenergiecoach.nl"
     }
   ];
 
@@ -117,22 +123,26 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
               </p>
 
               <div className="flex justify-center gap-4">
-                <motion.button
+                <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                   aria-label={`Connect with ${member.name} on LinkedIn`}
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Linkedin className="h-5 w-5 text-primary" />
-                </motion.button>
-                <motion.button
+                </motion.a>
+                <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                   aria-label={`Email ${member.name}`}
+                  href={`mailto:${member.email}`}
                 >
                   <Mail className="h-5 w-5 text-primary" />
-                </motion.button>
+                </motion.a>
               </div>
             </CardContent>
           </Card>
@@ -156,22 +166,26 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
               </div>
 
               <div className="flex justify-center gap-4">
-                <motion.button
+                <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                   aria-label={`Connect with ${member.name} on LinkedIn`}
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Linkedin className="h-5 w-5 text-primary" />
-                </motion.button>
-                <motion.button
+                </motion.a>
+                <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                   aria-label={`Email ${member.name}`}
+                  href={`mailto:${member.email}`}
                 >
                   <Mail className="h-5 w-5 text-primary" />
-                </motion.button>
+                </motion.a>
               </div>
             </CardContent>
           </Card>

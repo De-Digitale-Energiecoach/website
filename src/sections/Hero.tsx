@@ -89,7 +89,7 @@ export function Hero() {
             <ImageWithFallback
               src={teamImage}
               alt="Team working on sustainable energy solutions"
-              className="w-full h-96 object-cover rounded-2xl shadow-xl"
+              className="w-full h-96 object-cover object-left rounded-2xl shadow-xl"
             />
           </motion.div>
         </div>

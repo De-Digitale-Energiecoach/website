@@ -6,80 +6,80 @@
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
-  --foreground: #0a1f14;
-  --card: #ffffff;
-  --card-foreground: #0a1f14;
-  --popover: #ffffff;
-  --popover-foreground: #0a1f14;
-  --primary: #025134;
-  --primary-foreground: #ffffff;
-  --secondary: #f0f7f4;
-  --secondary-foreground: #025134;
-  --muted: #f0f7f4;
-  --muted-foreground: #4a6741;
-  --accent: #e6f2ed;
-  --accent-foreground: #025134;
+  --background: #f6f5f4;
+  --foreground: #254462;
+  --card: #fefefe;
+  --card-foreground: #254462;
+  --popover: #fefefe;
+  --popover-foreground: #254462;
+  --primary: #254462;
+  --primary-foreground: #fefefe;
+  --secondary: #e6f1ec;
+  --secondary-foreground: #4f6859;
+  --muted: #e6f1ec;
+  --muted-foreground: #4f6859;
+  --accent: #c6e4da;
+  --accent-foreground: #254462;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --border: #e6f2ed;
-  --input: transparent;
-  --input-background: #f0f7f4;
-  --switch-background: #cbced4;
+  --border: #c6e4da;
+  --input: #ffffff;
+  --input-background: #fefefe;
+  --switch-background: #c6e4da;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #025134;
-  --chart-1: #025134;
-  --chart-2: #34a853;
-  --chart-3: #66bb6a;
-  --chart-4: #81c784;
-  --chart-5: #a5d6a7;
+  --ring: #254462;
+  --chart-1: #254462;
+  --chart-2: #4f6859;
+  --chart-3: #c6e4da;
+  --chart-4: #e6f1ec;
+  --chart-5: #f6f5f4;
   --radius: 0.625rem;
-  --sidebar: #f8fdf9;
-  --sidebar-foreground: #0a1f14;
-  --sidebar-primary: #025134;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f0f7f4;
-  --sidebar-accent-foreground: #025134;
-  --sidebar-border: #e6f2ed;
-  --sidebar-ring: #025134;
+  --sidebar: #fefefe;
+  --sidebar-foreground: #254462;
+  --sidebar-primary: #254462;
+  --sidebar-primary-foreground: #fefefe;
+  --sidebar-accent: #e6f1ec;
+  --sidebar-accent-foreground: #4f6859;
+  --sidebar-border: #c6e4da;
+  --sidebar-ring: #254462;
 }
 
 .dark {
-  --background: #0a1f14;
-  --foreground: #f0f7f4;
-  --card: #0f2e1a;
-  --card-foreground: #f0f7f4;
-  --popover: #0f2e1a;
-  --popover-foreground: #f0f7f4;
-  --primary: #34a853;
-  --primary-foreground: #0a1f14;
-  --secondary: #1a3d20;
-  --secondary-foreground: #f0f7f4;
-  --muted: #1a3d20;
-  --muted-foreground: #9caf95;
-  --accent: #1a3d20;
-  --accent-foreground: #f0f7f4;
+  --background: #101a24;
+  --foreground: #f6f5f4;
+  --card: #162232;
+  --card-foreground: #f6f5f4;
+  --popover: #162232;
+  --popover-foreground: #f6f5f4;
+  --primary: #93b5c8;
+  --primary-foreground: #0c1621;
+  --secondary: #1f2d3d;
+  --secondary-foreground: #fefefe;
+  --muted: #1f2d3d;
+  --muted-foreground: #b2c7d4;
+  --accent: #21374a;
+  --accent-foreground: #f6f5f4;
   --destructive: #dc2626;
   --destructive-foreground: #fecaca;
-  --border: #1a3d20;
-  --input: #1a3d20;
-  --ring: #34a853;
+  --border: #1f2d3d;
+  --input: #1f2d3d;
+  --ring: #93b5c8;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --chart-1: #34a853;
-  --chart-2: #66bb6a;
-  --chart-3: #81c784;
-  --chart-4: #a5d6a7;
-  --chart-5: #c8e6c9;
-  --sidebar: #0f2e1a;
-  --sidebar-foreground: #f0f7f4;
-  --sidebar-primary: #34a853;
-  --sidebar-primary-foreground: #0a1f14;
-  --sidebar-accent: #1a3d20;
-  --sidebar-accent-foreground: #f0f7f4;
-  --sidebar-border: #1a3d20;
-  --sidebar-ring: #34a853;
+  --chart-1: #93b5c8;
+  --chart-2: #c6e4da;
+  --chart-3: #4f6859;
+  --chart-4: #254462;
+  --chart-5: #e6f1ec;
+  --sidebar: #162232;
+  --sidebar-foreground: #f6f5f4;
+  --sidebar-primary: #93b5c8;
+  --sidebar-primary-foreground: #0c1621;
+  --sidebar-accent: #1f2d3d;
+  --sidebar-accent-foreground: #f6f5f4;
+  --sidebar-border: #1f2d3d;
+  --sidebar-ring: #93b5c8;
 }
 
 @layer base {
@@ -161,6 +161,60 @@
 
 html {
   font-size: var(--font-size);
+}
+
+@layer base {
+  .markdown-content {
+    @apply text-muted-foreground leading-relaxed space-y-6;
+  }
+
+  .markdown-content h1,
+  .markdown-content h2,
+  .markdown-content h3,
+  .markdown-content h4 {
+    @apply text-foreground font-semibold;
+  }
+
+  .markdown-content h1 {
+    @apply text-3xl mt-10 mb-4;
+  }
+
+  .markdown-content h2 {
+    @apply text-2xl mt-8 mb-3;
+  }
+
+  .markdown-content h3 {
+    @apply text-xl mt-6 mb-2;
+  }
+
+  .markdown-content p {
+    @apply text-base;
+  }
+
+  .markdown-content ul,
+  .markdown-content ol {
+    @apply ml-6 space-y-2 text-base;
+  }
+
+  .markdown-content ul {
+    @apply list-disc;
+  }
+
+  .markdown-content ol {
+    @apply list-decimal;
+  }
+
+  .markdown-content a {
+    @apply text-primary underline underline-offset-2;
+  }
+
+  .markdown-content strong {
+    @apply text-foreground font-semibold;
+  }
+
+  .markdown-content hr {
+    @apply border-t border-border my-8;
+  }
 }
 
 /* 3D Card Flip Animation */

@@ -31,7 +31,14 @@ export function Footer() {
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              <a
+                href="https://www.linkedin.com/company/de-digitale-energiecoach/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+              </a>
             </div>
           </div>
 
